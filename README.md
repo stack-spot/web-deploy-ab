@@ -1,4 +1,4 @@
-# A/B testing at the edge for e-commerce
+# Stack Foundation Deploy AB Plugin
 
 ## Goal
 
