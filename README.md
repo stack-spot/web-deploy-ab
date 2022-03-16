@@ -10,19 +10,13 @@ We explore the use of edge computing, which is between the browser and the backe
 - With [AWS CloudFront Functions](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-functions.html) in Amazon CloudFront, you can write lightweight functions in JavaScript for high-scale, latency-sensitive CDN customizations. The CloudFront Functions allows you to run lightweight JavaScript code at the [218+ CloudFront edge locations](https://aws.amazon.com/cloudfront/features/?whats-new-cloudfront.sort-by=item.additionalFields.postDateTime&whats-new-cloudfront.sort-order=desc#Global_Edge_Network) (as of August 2021).
 - [Amazon CloudFront](https://aws.amazon.com/cloudfront) delivers your content through a worldwide network of data centers called edge locations. The regional edge caches are located between your origin web server and the global edge locations that serve content directly to your viewers.
 
-**Architecture:**
-
-The following diagram illustrates the architecture we will implement:
-
-![Architecture AB](templates/iac-deploy-ab/resources/readme/architecture_module_3_3.png)
-
 ## Example Scenario
 
 We have an e-commerce website for selling digital images and we want to modify the layout of the home page in order to see if more visitors will click on a image and potentially buy it when they arrive on the new layout versus the old layout.
 
 The architecture our website is the following:
 
-![General architecture](templates/iac-deploy-ab/resources/readme/architecture.png?width=1024px)
+![General architecture](templates/iac-deploy-ab/resources/readme/architecture_module_3_3.png)
 
 The static resources (html, javascript, css and images) are hosted on S3 and we can imagine having APIs for the dynamic part. We will concentrate on the static part, so our website has only the static part implemented.
 
