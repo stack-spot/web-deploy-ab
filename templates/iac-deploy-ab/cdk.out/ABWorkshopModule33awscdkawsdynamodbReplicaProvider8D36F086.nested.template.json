@@ -31,7 +31,7 @@
         ]
       },
       "Metadata": {
-        "aws:cdk:path": "ABWorkshopModule33/@aws-cdk--aws-dynamodb.ReplicaProvider/OnEventHandler/ServiceRole/Resource"
+        "aws:cdk:path": "DeployAB/@aws-cdk--aws-dynamodb.ReplicaProvider/OnEventHandler/ServiceRole/Resource"
       }
     },
     "OnEventHandlerServiceRoleDefaultPolicyC57085D4": {
@@ -75,7 +75,7 @@
         ]
       },
       "Metadata": {
-        "aws:cdk:path": "ABWorkshopModule33/@aws-cdk--aws-dynamodb.ReplicaProvider/OnEventHandler/ServiceRole/DefaultPolicy/Resource"
+        "aws:cdk:path": "DeployAB/@aws-cdk--aws-dynamodb.ReplicaProvider/OnEventHandler/ServiceRole/DefaultPolicy/Resource"
       }
     },
     "OnEventHandler42BEBAE0": {
@@ -83,7 +83,7 @@
       "Properties": {
         "Code": {
           "S3Bucket": {
-            "Ref": "referencetoABWorkshopModule33AssetParametersc1d5fd9982309c1ca4f9f4c91e9030a9df4f9f894bc074c3c8c5412f012ff369S3BucketB5BA8307Ref"
+            "Ref": "referencetoDeployABAssetParametersc1d5fd9982309c1ca4f9f4c91e9030a9df4f9f894bc074c3c8c5412f012ff369S3BucketB5BA8307Ref"
           },
           "S3Key": {
             "Fn::Join": [
@@ -96,7 +96,7 @@
                       "Fn::Split": [
                         "||",
                         {
-                          "Ref": "referencetoABWorkshopModule33AssetParametersc1d5fd9982309c1ca4f9f4c91e9030a9df4f9f894bc074c3c8c5412f012ff369S3VersionKeyC8E65EDBRef"
+                          "Ref": "referencetoDeployABAssetParametersc1d5fd9982309c1ca4f9f4c91e9030a9df4f9f894bc074c3c8c5412f012ff369S3VersionKeyC8E65EDBRef"
                         }
                       ]
                     }
@@ -109,7 +109,7 @@
                       "Fn::Split": [
                         "||",
                         {
-                          "Ref": "referencetoABWorkshopModule33AssetParametersc1d5fd9982309c1ca4f9f4c91e9030a9df4f9f894bc074c3c8c5412f012ff369S3VersionKeyC8E65EDBRef"
+                          "Ref": "referencetoDeployABAssetParametersc1d5fd9982309c1ca4f9f4c91e9030a9df4f9f894bc074c3c8c5412f012ff369S3VersionKeyC8E65EDBRef"
                         }
                       ]
                     }
@@ -134,7 +134,7 @@
         "OnEventHandlerServiceRole15A26729"
       ],
       "Metadata": {
-        "aws:cdk:path": "ABWorkshopModule33/@aws-cdk--aws-dynamodb.ReplicaProvider/OnEventHandler/Resource",
+        "aws:cdk:path": "DeployAB/@aws-cdk--aws-dynamodb.ReplicaProvider/OnEventHandler/Resource",
         "aws:asset:path": "asset.c1d5fd9982309c1ca4f9f4c91e9030a9df4f9f894bc074c3c8c5412f012ff369",
         "aws:asset:property": "Code"
       }
@@ -170,7 +170,7 @@
         ]
       },
       "Metadata": {
-        "aws:cdk:path": "ABWorkshopModule33/@aws-cdk--aws-dynamodb.ReplicaProvider/IsCompleteHandler/ServiceRole/Resource"
+        "aws:cdk:path": "DeployAB/@aws-cdk--aws-dynamodb.ReplicaProvider/IsCompleteHandler/ServiceRole/Resource"
       }
     },
     "IsCompleteHandler7073F4DA": {
@@ -178,7 +178,7 @@
       "Properties": {
         "Code": {
           "S3Bucket": {
-            "Ref": "referencetoABWorkshopModule33AssetParametersc1d5fd9982309c1ca4f9f4c91e9030a9df4f9f894bc074c3c8c5412f012ff369S3BucketB5BA8307Ref"
+            "Ref": "referencetoDeployABAssetParametersc1d5fd9982309c1ca4f9f4c91e9030a9df4f9f894bc074c3c8c5412f012ff369S3BucketB5BA8307Ref"
           },
           "S3Key": {
             "Fn::Join": [
@@ -191,7 +191,7 @@
                       "Fn::Split": [
                         "||",
                         {
-                          "Ref": "referencetoABWorkshopModule33AssetParametersc1d5fd9982309c1ca4f9f4c91e9030a9df4f9f894bc074c3c8c5412f012ff369S3VersionKeyC8E65EDBRef"
+                          "Ref": "referencetoDeployABAssetParametersc1d5fd9982309c1ca4f9f4c91e9030a9df4f9f894bc074c3c8c5412f012ff369S3VersionKeyC8E65EDBRef"
                         }
                       ]
                     }
@@ -204,7 +204,7 @@
                       "Fn::Split": [
                         "||",
                         {
-                          "Ref": "referencetoABWorkshopModule33AssetParametersc1d5fd9982309c1ca4f9f4c91e9030a9df4f9f894bc074c3c8c5412f012ff369S3VersionKeyC8E65EDBRef"
+                          "Ref": "referencetoDeployABAssetParametersc1d5fd9982309c1ca4f9f4c91e9030a9df4f9f894bc074c3c8c5412f012ff369S3VersionKeyC8E65EDBRef"
                         }
                       ]
                     }
@@ -228,7 +228,7 @@
         "IsCompleteHandlerServiceRole5810CC58"
       ],
       "Metadata": {
-        "aws:cdk:path": "ABWorkshopModule33/@aws-cdk--aws-dynamodb.ReplicaProvider/IsCompleteHandler/Resource",
+        "aws:cdk:path": "DeployAB/@aws-cdk--aws-dynamodb.ReplicaProvider/IsCompleteHandler/Resource",
         "aws:asset:path": "asset.c1d5fd9982309c1ca4f9f4c91e9030a9df4f9f894bc074c3c8c5412f012ff369",
         "aws:asset:property": "Code"
       }
@@ -264,7 +264,7 @@
         ]
       },
       "Metadata": {
-        "aws:cdk:path": "ABWorkshopModule33/@aws-cdk--aws-dynamodb.ReplicaProvider/Provider/framework-onEvent/ServiceRole/Resource"
+        "aws:cdk:path": "DeployAB/@aws-cdk--aws-dynamodb.ReplicaProvider/Provider/framework-onEvent/ServiceRole/Resource"
       }
     },
     "ProviderframeworkonEventServiceRoleDefaultPolicy48CD2133": {
@@ -310,7 +310,7 @@
         ]
       },
       "Metadata": {
-        "aws:cdk:path": "ABWorkshopModule33/@aws-cdk--aws-dynamodb.ReplicaProvider/Provider/framework-onEvent/ServiceRole/DefaultPolicy/Resource"
+        "aws:cdk:path": "DeployAB/@aws-cdk--aws-dynamodb.ReplicaProvider/Provider/framework-onEvent/ServiceRole/DefaultPolicy/Resource"
       }
     },
     "ProviderframeworkonEvent83C1D0A7": {
@@ -318,7 +318,7 @@
       "Properties": {
         "Code": {
           "S3Bucket": {
-            "Ref": "referencetoABWorkshopModule33AssetParametersc691172cdeefa2c91b5a2907f9d81118e47597634943344795f1a844192dd49cS3BucketC88EEA55Ref"
+            "Ref": "referencetoDeployABAssetParametersc691172cdeefa2c91b5a2907f9d81118e47597634943344795f1a844192dd49cS3BucketC88EEA55Ref"
           },
           "S3Key": {
             "Fn::Join": [
@@ -331,7 +331,7 @@
                       "Fn::Split": [
                         "||",
                         {
-                          "Ref": "referencetoABWorkshopModule33AssetParametersc691172cdeefa2c91b5a2907f9d81118e47597634943344795f1a844192dd49cS3VersionKey59135B96Ref"
+                          "Ref": "referencetoDeployABAssetParametersc691172cdeefa2c91b5a2907f9d81118e47597634943344795f1a844192dd49cS3VersionKey59135B96Ref"
                         }
                       ]
                     }
@@ -344,7 +344,7 @@
                       "Fn::Split": [
                         "||",
                         {
-                          "Ref": "referencetoABWorkshopModule33AssetParametersc691172cdeefa2c91b5a2907f9d81118e47597634943344795f1a844192dd49cS3VersionKey59135B96Ref"
+                          "Ref": "referencetoDeployABAssetParametersc691172cdeefa2c91b5a2907f9d81118e47597634943344795f1a844192dd49cS3VersionKey59135B96Ref"
                         }
                       ]
                     }
@@ -360,7 +360,7 @@
             "Arn"
           ]
         },
-        "Description": "AWS CDK resource provider framework - onEvent (ABWorkshopModule33/@aws-cdk--aws-dynamodb.ReplicaProvider/Provider)",
+        "Description": "AWS CDK resource provider framework - onEvent (DeployAB/@aws-cdk--aws-dynamodb.ReplicaProvider/Provider)",
         "Environment": {
           "Variables": {
             "USER_ON_EVENT_FUNCTION_ARN": {
@@ -389,7 +389,7 @@
         "ProviderframeworkonEventServiceRole9FF04296"
       ],
       "Metadata": {
-        "aws:cdk:path": "ABWorkshopModule33/@aws-cdk--aws-dynamodb.ReplicaProvider/Provider/framework-onEvent/Resource",
+        "aws:cdk:path": "DeployAB/@aws-cdk--aws-dynamodb.ReplicaProvider/Provider/framework-onEvent/Resource",
         "aws:asset:path": "asset.c691172cdeefa2c91b5a2907f9d81118e47597634943344795f1a844192dd49c",
         "aws:asset:property": "Code"
       }
@@ -425,7 +425,7 @@
         ]
       },
       "Metadata": {
-        "aws:cdk:path": "ABWorkshopModule33/@aws-cdk--aws-dynamodb.ReplicaProvider/Provider/framework-isComplete/ServiceRole/Resource"
+        "aws:cdk:path": "DeployAB/@aws-cdk--aws-dynamodb.ReplicaProvider/Provider/framework-isComplete/ServiceRole/Resource"
       }
     },
     "ProviderframeworkisCompleteServiceRoleDefaultPolicy2E7140AC": {
@@ -464,7 +464,7 @@
         ]
       },
       "Metadata": {
-        "aws:cdk:path": "ABWorkshopModule33/@aws-cdk--aws-dynamodb.ReplicaProvider/Provider/framework-isComplete/ServiceRole/DefaultPolicy/Resource"
+        "aws:cdk:path": "DeployAB/@aws-cdk--aws-dynamodb.ReplicaProvider/Provider/framework-isComplete/ServiceRole/DefaultPolicy/Resource"
       }
     },
     "ProviderframeworkisComplete26D7B0CB": {
@@ -472,7 +472,7 @@
       "Properties": {
         "Code": {
           "S3Bucket": {
-            "Ref": "referencetoABWorkshopModule33AssetParametersc691172cdeefa2c91b5a2907f9d81118e47597634943344795f1a844192dd49cS3BucketC88EEA55Ref"
+            "Ref": "referencetoDeployABAssetParametersc691172cdeefa2c91b5a2907f9d81118e47597634943344795f1a844192dd49cS3BucketC88EEA55Ref"
           },
           "S3Key": {
             "Fn::Join": [
@@ -485,7 +485,7 @@
                       "Fn::Split": [
                         "||",
                         {
-                          "Ref": "referencetoABWorkshopModule33AssetParametersc691172cdeefa2c91b5a2907f9d81118e47597634943344795f1a844192dd49cS3VersionKey59135B96Ref"
+                          "Ref": "referencetoDeployABAssetParametersc691172cdeefa2c91b5a2907f9d81118e47597634943344795f1a844192dd49cS3VersionKey59135B96Ref"
                         }
                       ]
                     }
@@ -498,7 +498,7 @@
                       "Fn::Split": [
                         "||",
                         {
-                          "Ref": "referencetoABWorkshopModule33AssetParametersc691172cdeefa2c91b5a2907f9d81118e47597634943344795f1a844192dd49cS3VersionKey59135B96Ref"
+                          "Ref": "referencetoDeployABAssetParametersc691172cdeefa2c91b5a2907f9d81118e47597634943344795f1a844192dd49cS3VersionKey59135B96Ref"
                         }
                       ]
                     }
@@ -514,7 +514,7 @@
             "Arn"
           ]
         },
-        "Description": "AWS CDK resource provider framework - isComplete (ABWorkshopModule33/@aws-cdk--aws-dynamodb.ReplicaProvider/Provider)",
+        "Description": "AWS CDK resource provider framework - isComplete (DeployAB/@aws-cdk--aws-dynamodb.ReplicaProvider/Provider)",
         "Environment": {
           "Variables": {
             "USER_ON_EVENT_FUNCTION_ARN": {
@@ -540,7 +540,7 @@
         "ProviderframeworkisCompleteServiceRoleB1087139"
       ],
       "Metadata": {
-        "aws:cdk:path": "ABWorkshopModule33/@aws-cdk--aws-dynamodb.ReplicaProvider/Provider/framework-isComplete/Resource",
+        "aws:cdk:path": "DeployAB/@aws-cdk--aws-dynamodb.ReplicaProvider/Provider/framework-isComplete/Resource",
         "aws:asset:path": "asset.c691172cdeefa2c91b5a2907f9d81118e47597634943344795f1a844192dd49c",
         "aws:asset:property": "Code"
       }
@@ -576,7 +576,7 @@
         ]
       },
       "Metadata": {
-        "aws:cdk:path": "ABWorkshopModule33/@aws-cdk--aws-dynamodb.ReplicaProvider/Provider/framework-onTimeout/ServiceRole/Resource"
+        "aws:cdk:path": "DeployAB/@aws-cdk--aws-dynamodb.ReplicaProvider/Provider/framework-onTimeout/ServiceRole/Resource"
       }
     },
     "ProviderframeworkonTimeoutServiceRoleDefaultPolicy2688969F": {
@@ -615,7 +615,7 @@
         ]
       },
       "Metadata": {
-        "aws:cdk:path": "ABWorkshopModule33/@aws-cdk--aws-dynamodb.ReplicaProvider/Provider/framework-onTimeout/ServiceRole/DefaultPolicy/Resource"
+        "aws:cdk:path": "DeployAB/@aws-cdk--aws-dynamodb.ReplicaProvider/Provider/framework-onTimeout/ServiceRole/DefaultPolicy/Resource"
       }
     },
     "ProviderframeworkonTimeout0B47CA38": {
@@ -623,7 +623,7 @@
       "Properties": {
         "Code": {
           "S3Bucket": {
-            "Ref": "referencetoABWorkshopModule33AssetParametersc691172cdeefa2c91b5a2907f9d81118e47597634943344795f1a844192dd49cS3BucketC88EEA55Ref"
+            "Ref": "referencetoDeployABAssetParametersc691172cdeefa2c91b5a2907f9d81118e47597634943344795f1a844192dd49cS3BucketC88EEA55Ref"
           },
           "S3Key": {
             "Fn::Join": [
@@ -636,7 +636,7 @@
                       "Fn::Split": [
                         "||",
                         {
-                          "Ref": "referencetoABWorkshopModule33AssetParametersc691172cdeefa2c91b5a2907f9d81118e47597634943344795f1a844192dd49cS3VersionKey59135B96Ref"
+                          "Ref": "referencetoDeployABAssetParametersc691172cdeefa2c91b5a2907f9d81118e47597634943344795f1a844192dd49cS3VersionKey59135B96Ref"
                         }
                       ]
                     }
@@ -649,7 +649,7 @@
                       "Fn::Split": [
                         "||",
                         {
-                          "Ref": "referencetoABWorkshopModule33AssetParametersc691172cdeefa2c91b5a2907f9d81118e47597634943344795f1a844192dd49cS3VersionKey59135B96Ref"
+                          "Ref": "referencetoDeployABAssetParametersc691172cdeefa2c91b5a2907f9d81118e47597634943344795f1a844192dd49cS3VersionKey59135B96Ref"
                         }
                       ]
                     }
@@ -665,7 +665,7 @@
             "Arn"
           ]
         },
-        "Description": "AWS CDK resource provider framework - onTimeout (ABWorkshopModule33/@aws-cdk--aws-dynamodb.ReplicaProvider/Provider)",
+        "Description": "AWS CDK resource provider framework - onTimeout (DeployAB/@aws-cdk--aws-dynamodb.ReplicaProvider/Provider)",
         "Environment": {
           "Variables": {
             "USER_ON_EVENT_FUNCTION_ARN": {
@@ -691,7 +691,7 @@
         "ProviderframeworkonTimeoutServiceRole28643D26"
       ],
       "Metadata": {
-        "aws:cdk:path": "ABWorkshopModule33/@aws-cdk--aws-dynamodb.ReplicaProvider/Provider/framework-onTimeout/Resource",
+        "aws:cdk:path": "DeployAB/@aws-cdk--aws-dynamodb.ReplicaProvider/Provider/framework-onTimeout/Resource",
         "aws:asset:path": "asset.c691172cdeefa2c91b5a2907f9d81118e47597634943344795f1a844192dd49c",
         "aws:asset:property": "Code"
       }
@@ -724,7 +724,7 @@
         }
       },
       "Metadata": {
-        "aws:cdk:path": "ABWorkshopModule33/@aws-cdk--aws-dynamodb.ReplicaProvider/Provider/waiter-state-machine/Role/Resource"
+        "aws:cdk:path": "DeployAB/@aws-cdk--aws-dynamodb.ReplicaProvider/Provider/waiter-state-machine/Role/Resource"
       }
     },
     "ProviderwaiterstatemachineRoleDefaultPolicyD3C3DA1A": {
@@ -763,7 +763,7 @@
         ]
       },
       "Metadata": {
-        "aws:cdk:path": "ABWorkshopModule33/@aws-cdk--aws-dynamodb.ReplicaProvider/Provider/waiter-state-machine/Role/DefaultPolicy/Resource"
+        "aws:cdk:path": "DeployAB/@aws-cdk--aws-dynamodb.ReplicaProvider/Provider/waiter-state-machine/Role/DefaultPolicy/Resource"
       }
     },
     "Providerwaiterstatemachine5D4A9DF0": {
@@ -803,7 +803,7 @@
         "ProviderwaiterstatemachineRole0C7159F9"
       ],
       "Metadata": {
-        "aws:cdk:path": "ABWorkshopModule33/@aws-cdk--aws-dynamodb.ReplicaProvider/Provider/waiter-state-machine/Resource"
+        "aws:cdk:path": "DeployAB/@aws-cdk--aws-dynamodb.ReplicaProvider/Provider/waiter-state-machine/Resource"
       }
     },
     "CDKMetadata": {
@@ -812,7 +812,7 @@
         "Analytics": "v2:deflate64:H4sIAAAAAAAAE0VPQQoCMQx8i/dsdBH0qggeRdYX1DZKdLeBplWk9O9uV8XTTCbJZNJiu1jjYrYxT22su8+zlUCYD6SR3Ckae4etKsWRXtlfoSOVFCzBTrzGkGyE3cX/1YsfG44jiy9QTXNvhrMzmPfJ2yrXmR8vwGbA3Ek/rU54lJ7tq5YfVkCXjakZFKcoBWzSKEMTvlcVj0Ee7CgU8OIIbzp/tCtsl+NnN2VuQvKRB8Lug29Ux4Om9gAAAA=="
       },
       "Metadata": {
-        "aws:cdk:path": "ABWorkshopModule33/@aws-cdk--aws-dynamodb.ReplicaProvider/CDKMetadata/Default"
+        "aws:cdk:path": "DeployAB/@aws-cdk--aws-dynamodb.ReplicaProvider/CDKMetadata/Default"
       },
       "Condition": "CDKMetadataAvailable"
     }
@@ -1012,17 +1012,17 @@
     }
   },
   "Outputs": {
-    "ABWorkshopModule33awscdkawsdynamodbReplicaProviderOnEventHandlerServiceRoleD11EA548Ref": {
+    "DeployABawscdkawsdynamodbReplicaProviderOnEventHandlerServiceRoleD11EA548Ref": {
       "Value": {
         "Ref": "OnEventHandlerServiceRole15A26729"
       }
     },
-    "ABWorkshopModule33awscdkawsdynamodbReplicaProviderIsCompleteHandlerServiceRoleFC9BEC1BRef": {
+    "DeployABawscdkawsdynamodbReplicaProviderIsCompleteHandlerServiceRoleFC9BEC1BRef": {
       "Value": {
         "Ref": "IsCompleteHandlerServiceRole5810CC58"
       }
     },
-    "ABWorkshopModule33awscdkawsdynamodbReplicaProviderframeworkonEvent690E7A3EArn": {
+    "DeployABawscdkawsdynamodbReplicaProviderframeworkonEvent690E7A3EArn": {
       "Value": {
         "Fn::GetAtt": [
           "ProviderframeworkonEvent83C1D0A7",
@@ -1032,16 +1032,16 @@
     }
   },
   "Parameters": {
-    "referencetoABWorkshopModule33AssetParametersc1d5fd9982309c1ca4f9f4c91e9030a9df4f9f894bc074c3c8c5412f012ff369S3BucketB5BA8307Ref": {
+    "referencetoDeployABAssetParametersc1d5fd9982309c1ca4f9f4c91e9030a9df4f9f894bc074c3c8c5412f012ff369S3BucketB5BA8307Ref": {
       "Type": "String"
     },
-    "referencetoABWorkshopModule33AssetParametersc1d5fd9982309c1ca4f9f4c91e9030a9df4f9f894bc074c3c8c5412f012ff369S3VersionKeyC8E65EDBRef": {
+    "referencetoDeployABAssetParametersc1d5fd9982309c1ca4f9f4c91e9030a9df4f9f894bc074c3c8c5412f012ff369S3VersionKeyC8E65EDBRef": {
       "Type": "String"
     },
-    "referencetoABWorkshopModule33AssetParametersc691172cdeefa2c91b5a2907f9d81118e47597634943344795f1a844192dd49cS3BucketC88EEA55Ref": {
+    "referencetoDeployABAssetParametersc691172cdeefa2c91b5a2907f9d81118e47597634943344795f1a844192dd49cS3BucketC88EEA55Ref": {
       "Type": "String"
     },
-    "referencetoABWorkshopModule33AssetParametersc691172cdeefa2c91b5a2907f9d81118e47597634943344795f1a844192dd49cS3VersionKey59135B96Ref": {
+    "referencetoDeployABAssetParametersc691172cdeefa2c91b5a2907f9d81118e47597634943344795f1a844192dd49cS3VersionKey59135B96Ref": {
       "Type": "String"
     }
   }

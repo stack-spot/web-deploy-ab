@@ -7,15 +7,15 @@
         "file": "tree.json"
       }
     },
-    "ABWorkshopModule33": {
+    "DeployAB": {
       "type": "aws:cloudformation:stack",
       "environment": "aws://unknown-account/unknown-region",
       "properties": {
-        "templateFile": "ABWorkshopModule33.template.json",
+        "templateFile": "DeployAB.template.json",
         "validateOnSynth": false
       },
       "metadata": {
-        "/ABWorkshopModule33": [
+        "/DeployAB": [
           {
             "type": "aws:cdk:asset",
             "data": {
@@ -219,7 +219,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/hosting-bucket-deployment/Resource": [
+        "/DeployAB/hosting-bucket-deployment/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "hostingbucketdeployment9A1F5ECC",
@@ -245,7 +245,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/hosting-bucket-deployment/Policy/Resource": [
+        "/DeployAB/hosting-bucket-deployment/Policy/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "hostingbucketdeploymentPolicy6F59EA36",
@@ -276,7 +276,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/hosting/AwsCliLayer/Resource": [
+        "/DeployAB/hosting/AwsCliLayer/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "hostingAwsCliLayer65A52CE1",
@@ -304,7 +304,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/hosting/CustomResource/Default": [
+        "/DeployAB/hosting/CustomResource/Default": [
           {
             "type": "aws:cdk:logicalId",
             "data": "hostingCustomResource8221053F",
@@ -331,7 +331,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/AssetParameters/e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68/S3Bucket": [
+        "/DeployAB/AssetParameters/e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68/S3Bucket": [
           {
             "type": "aws:cdk:logicalId",
             "data": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3BucketAEADE8C7",
@@ -366,7 +366,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/AssetParameters/e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68/S3VersionKey": [
+        "/DeployAB/AssetParameters/e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68/S3VersionKey": [
           {
             "type": "aws:cdk:logicalId",
             "data": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3VersionKeyE415415F",
@@ -401,7 +401,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/AssetParameters/e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68/ArtifactHash": [
+        "/DeployAB/AssetParameters/e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68/ArtifactHash": [
           {
             "type": "aws:cdk:logicalId",
             "data": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68ArtifactHashD9A515C3",
@@ -436,7 +436,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/AssetParameters/c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf/S3Bucket": [
+        "/DeployAB/AssetParameters/c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf/S3Bucket": [
           {
             "type": "aws:cdk:logicalId",
             "data": "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfS3Bucket55EFA30C",
@@ -472,7 +472,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/AssetParameters/c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf/S3VersionKey": [
+        "/DeployAB/AssetParameters/c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf/S3VersionKey": [
           {
             "type": "aws:cdk:logicalId",
             "data": "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfS3VersionKey60329B70",
@@ -508,7 +508,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/AssetParameters/c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf/ArtifactHash": [
+        "/DeployAB/AssetParameters/c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf/ArtifactHash": [
           {
             "type": "aws:cdk:logicalId",
             "data": "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfArtifactHash85F58E48",
@@ -544,7 +544,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/AssetParameters/fcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791/S3Bucket": [
+        "/DeployAB/AssetParameters/fcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791/S3Bucket": [
           {
             "type": "aws:cdk:logicalId",
             "data": "AssetParametersfcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791S3Bucket10ACC780",
@@ -579,7 +579,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/AssetParameters/fcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791/S3VersionKey": [
+        "/DeployAB/AssetParameters/fcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791/S3VersionKey": [
           {
             "type": "aws:cdk:logicalId",
             "data": "AssetParametersfcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791S3VersionKey2D69F27F",
@@ -614,7 +614,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/AssetParameters/fcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791/ArtifactHash": [
+        "/DeployAB/AssetParameters/fcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791/ArtifactHash": [
           {
             "type": "aws:cdk:logicalId",
             "data": "AssetParametersfcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791ArtifactHash0E915A40",
@@ -649,7 +649,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/AssetParameters/492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37/S3Bucket": [
+        "/DeployAB/AssetParameters/492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37/S3Bucket": [
           {
             "type": "aws:cdk:logicalId",
             "data": "AssetParameters492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37S3Bucket78CB7A00",
@@ -682,7 +682,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/AssetParameters/492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37/S3VersionKey": [
+        "/DeployAB/AssetParameters/492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37/S3VersionKey": [
           {
             "type": "aws:cdk:logicalId",
             "data": "AssetParameters492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37S3VersionKeyC63962F4",
@@ -715,7 +715,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/AssetParameters/492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37/ArtifactHash": [
+        "/DeployAB/AssetParameters/492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37/ArtifactHash": [
           {
             "type": "aws:cdk:logicalId",
             "data": "AssetParameters492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37ArtifactHashC9278BA1",
@@ -748,7 +748,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/AssetParameters/8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473df/S3Bucket": [
+        "/DeployAB/AssetParameters/8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473df/S3Bucket": [
           {
             "type": "aws:cdk:logicalId",
             "data": "AssetParameters8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473dfS3Bucket53BEC018",
@@ -781,7 +781,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/AssetParameters/8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473df/S3VersionKey": [
+        "/DeployAB/AssetParameters/8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473df/S3VersionKey": [
           {
             "type": "aws:cdk:logicalId",
             "data": "AssetParameters8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473dfS3VersionKey0B87FB85",
@@ -814,7 +814,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/AssetParameters/8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473df/ArtifactHash": [
+        "/DeployAB/AssetParameters/8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473df/ArtifactHash": [
           {
             "type": "aws:cdk:logicalId",
             "data": "AssetParameters8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473dfArtifactHash50883CCE",
@@ -847,7 +847,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource": [
+        "/DeployAB/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265",
@@ -877,7 +877,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource": [
+        "/DeployAB/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF",
@@ -913,7 +913,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource": [
+        "/DeployAB/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536",
@@ -942,7 +942,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/LambdaEdgeViewerRequest/ServiceRole/Resource": [
+        "/DeployAB/LambdaEdgeViewerRequest/ServiceRole/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "LambdaEdgeViewerRequestServiceRole2535341A",
@@ -969,7 +969,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/LambdaEdgeViewerRequest/ServiceRole/DefaultPolicy/Resource": [
+        "/DeployAB/LambdaEdgeViewerRequest/ServiceRole/DefaultPolicy/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "LambdaEdgeViewerRequestServiceRoleDefaultPolicy5F5D266A",
@@ -999,7 +999,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/LambdaEdgeViewerRequest/Resource": [
+        "/DeployAB/LambdaEdgeViewerRequest/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "LambdaEdgeViewerRequestB3CC60EE",
@@ -1025,7 +1025,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/LambdaEdgeViewerRequest/CurrentVersion/Resource": [
+        "/DeployAB/LambdaEdgeViewerRequest/CurrentVersion/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "LambdaEdgeViewerRequestCurrentVersionCE19CEC5f2caa18499446cedefd50a924d8f1ea4",
@@ -1052,7 +1052,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/LambdaEdgeViewerResponse/ServiceRole/Resource": [
+        "/DeployAB/LambdaEdgeViewerResponse/ServiceRole/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "LambdaEdgeViewerResponseServiceRoleEE7AB7EC",
@@ -1079,7 +1079,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/LambdaEdgeViewerResponse/Resource": [
+        "/DeployAB/LambdaEdgeViewerResponse/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "LambdaEdgeViewerResponseC8EE4243",
@@ -1105,7 +1105,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/LambdaEdgeViewerResponse/CurrentVersion/Resource": [
+        "/DeployAB/LambdaEdgeViewerResponse/CurrentVersion/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "LambdaEdgeViewerResponseCurrentVersion6F2F1900455b5f002292463bb8adc33cec4a8062",
@@ -1132,7 +1132,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/RedirectTable": [
+        "/DeployAB/RedirectTable": [
           {
             "type": "aws:cdk:hasPhysicalName",
             "data": {
@@ -1161,7 +1161,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/RedirectTable/Resource": [
+        "/DeployAB/RedirectTable/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "RedirectTable0B40696D",
@@ -1187,7 +1187,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/AB testing distribution/Origin1/S3Origin/Resource": [
+        "/DeployAB/{{inputs.appName}}/Origin1/S3Origin/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "ABtestingdistributionOrigin1S3Origin263A95EF",
@@ -1217,7 +1217,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/AB testing distribution/Resource": [
+        "/DeployAB/{{inputs.appName}}/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "ABtestingdistribution05761D28",
@@ -1243,7 +1243,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/MonitoringDashboard/MonitoringDashboard/Resource": [
+        "/DeployAB/MonitoringDashboard/MonitoringDashboard/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "MonitoringDashboard07D6683D",
@@ -1271,7 +1271,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/CloudFrontURL": [
+        "/DeployAB/CloudFrontURL": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CloudFrontURL",
@@ -1296,7 +1296,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/CDKMetadata/Default": [
+        "/DeployAB/CDKMetadata/Default": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CDKMetadata",
@@ -1316,7 +1316,7 @@
             ]
           }
         ],
-        "/ABWorkshopModule33/CDKMetadata/Condition": [
+        "/DeployAB/CDKMetadata/Condition": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CDKMetadataAvailable",
@@ -1337,7 +1337,7 @@
           }
         ]
       },
-      "displayName": "ABWorkshopModule33"
+      "displayName": "DeployAB"
     }
   }
 }

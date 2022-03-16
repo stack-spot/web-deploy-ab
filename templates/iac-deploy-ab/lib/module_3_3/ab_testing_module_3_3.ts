@@ -26,7 +26,7 @@ import * as dynamodb from "@aws-cdk/aws-dynamodb";
 import { ABDashboard } from '../ab_dashboard';
 
 
-export class Module_3_3 extends cdk.Stack {
+export class DeployAB extends cdk.Stack {
 
   constructor(scope: cdk.App, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
@@ -34,7 +34,7 @@ export class Module_3_3 extends cdk.Stack {
     const hostingBucket = new s3.Bucket(this, 'hosting-bucket-deployment');
 
     new s3deployment.BucketDeployment(this, "hosting", {
-      sources: [s3deployment.Source.asset("./resources/website")],
+      sources: [s3deployment.Source.asset("{{inputs.appBuildPath}}")],
       destinationBucket: hostingBucket,
     });
 
@@ -62,7 +62,7 @@ export class Module_3_3 extends cdk.Stack {
 
     const hostingOrigin = new origins.S3Origin(hostingBucket);
 
-    const myDistribution = new cloudfront.Distribution(this, 'AB testing distribution', {
+    const myDistribution = new cloudfront.Distribution(this, '{{inputs.appName}}', {
       defaultBehavior: {
          origin: hostingOrigin, viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS
       },
@@ -85,11 +85,11 @@ export class Module_3_3 extends cdk.Stack {
 
       },
 
-       comment : 'AB Testing Workshop - Module 3-3'
+       comment : '{{inputs.appSiteTitle}}'
     });
 
     const dashboard = new ABDashboard(this, "MonitoringDashboard");
-    dashboard.createModule33Dashboard(lambdaEdgeViewerRequest.functionName, "", "ABTestingWorkshopModule33");
+    dashboard.createModule33Dashboard(lambdaEdgeViewerRequest.functionName, "", "{{inputs.appName}}");
 
     new cdk.CfnOutput(this, 'CloudFrontURL', {
       description: 'The CloudFront distribution URL',

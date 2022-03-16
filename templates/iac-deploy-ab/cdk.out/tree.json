@@ -12,17 +12,17 @@
           "version": "1.107.0"
         }
       },
-      "ABWorkshopModule33": {
-        "id": "ABWorkshopModule33",
-        "path": "ABWorkshopModule33",
+      "DeployAB": {
+        "id": "DeployAB",
+        "path": "DeployAB",
         "children": {
           "hosting-bucket-deployment": {
             "id": "hosting-bucket-deployment",
-            "path": "ABWorkshopModule33/hosting-bucket-deployment",
+            "path": "DeployAB/hosting-bucket-deployment",
             "children": {
               "Resource": {
                 "id": "Resource",
-                "path": "ABWorkshopModule33/hosting-bucket-deployment/Resource",
+                "path": "DeployAB/hosting-bucket-deployment/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
                   "aws:cdk:cloudformation:props": {}
@@ -34,7 +34,7 @@
               },
               "Notifications": {
                 "id": "Notifications",
-                "path": "ABWorkshopModule33/hosting-bucket-deployment/Notifications",
+                "path": "DeployAB/hosting-bucket-deployment/Notifications",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Construct",
                   "version": "1.107.0"
@@ -42,11 +42,11 @@
               },
               "Policy": {
                 "id": "Policy",
-                "path": "ABWorkshopModule33/hosting-bucket-deployment/Policy",
+                "path": "DeployAB/hosting-bucket-deployment/Policy",
                 "children": {
                   "Resource": {
                     "id": "Resource",
-                    "path": "ABWorkshopModule33/hosting-bucket-deployment/Policy/Resource",
+                    "path": "DeployAB/hosting-bucket-deployment/Policy/Resource",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::S3::BucketPolicy",
                       "aws:cdk:cloudformation:props": {
@@ -105,19 +105,19 @@
           },
           "hosting": {
             "id": "hosting",
-            "path": "ABWorkshopModule33/hosting",
+            "path": "DeployAB/hosting",
             "children": {
               "AwsCliLayer": {
                 "id": "AwsCliLayer",
-                "path": "ABWorkshopModule33/hosting/AwsCliLayer",
+                "path": "DeployAB/hosting/AwsCliLayer",
                 "children": {
                   "Code": {
                     "id": "Code",
-                    "path": "ABWorkshopModule33/hosting/AwsCliLayer/Code",
+                    "path": "DeployAB/hosting/AwsCliLayer/Code",
                     "children": {
                       "Stage": {
                         "id": "Stage",
-                        "path": "ABWorkshopModule33/hosting/AwsCliLayer/Code/Stage",
+                        "path": "DeployAB/hosting/AwsCliLayer/Code/Stage",
                         "constructInfo": {
                           "fqn": "@aws-cdk/core.AssetStaging",
                           "version": "1.107.0"
@@ -125,7 +125,7 @@
                       },
                       "AssetBucket": {
                         "id": "AssetBucket",
-                        "path": "ABWorkshopModule33/hosting/AwsCliLayer/Code/AssetBucket",
+                        "path": "DeployAB/hosting/AwsCliLayer/Code/AssetBucket",
                         "constructInfo": {
                           "fqn": "@aws-cdk/core.Resource",
                           "version": "1.107.0"
@@ -139,7 +139,7 @@
                   },
                   "Resource": {
                     "id": "Resource",
-                    "path": "ABWorkshopModule33/hosting/AwsCliLayer/Resource",
+                    "path": "DeployAB/hosting/AwsCliLayer/Resource",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::Lambda::LayerVersion",
                       "aws:cdk:cloudformation:props": {
@@ -197,7 +197,7 @@
               },
               "CustomResourceHandler": {
                 "id": "CustomResourceHandler",
-                "path": "ABWorkshopModule33/hosting/CustomResourceHandler",
+                "path": "DeployAB/hosting/CustomResourceHandler",
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-lambda.SingletonFunction",
                   "version": "1.107.0"
@@ -205,11 +205,11 @@
               },
               "Asset1": {
                 "id": "Asset1",
-                "path": "ABWorkshopModule33/hosting/Asset1",
+                "path": "DeployAB/hosting/Asset1",
                 "children": {
                   "Stage": {
                     "id": "Stage",
-                    "path": "ABWorkshopModule33/hosting/Asset1/Stage",
+                    "path": "DeployAB/hosting/Asset1/Stage",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.AssetStaging",
                       "version": "1.107.0"
@@ -217,7 +217,7 @@
                   },
                   "AssetBucket": {
                     "id": "AssetBucket",
-                    "path": "ABWorkshopModule33/hosting/Asset1/AssetBucket",
+                    "path": "DeployAB/hosting/Asset1/AssetBucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.Resource",
                       "version": "1.107.0"
@@ -231,11 +231,11 @@
               },
               "CustomResource": {
                 "id": "CustomResource",
-                "path": "ABWorkshopModule33/hosting/CustomResource",
+                "path": "DeployAB/hosting/CustomResource",
                 "children": {
                   "Default": {
                     "id": "Default",
-                    "path": "ABWorkshopModule33/hosting/CustomResource/Default",
+                    "path": "DeployAB/hosting/CustomResource/Default",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnResource",
                       "version": "1.107.0"
@@ -255,15 +255,15 @@
           },
           "AssetParameters": {
             "id": "AssetParameters",
-            "path": "ABWorkshopModule33/AssetParameters",
+            "path": "DeployAB/AssetParameters",
             "children": {
               "e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68": {
                 "id": "e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68",
-                "path": "ABWorkshopModule33/AssetParameters/e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68",
+                "path": "DeployAB/AssetParameters/e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68",
                 "children": {
                   "S3Bucket": {
                     "id": "S3Bucket",
-                    "path": "ABWorkshopModule33/AssetParameters/e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68/S3Bucket",
+                    "path": "DeployAB/AssetParameters/e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68/S3Bucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.107.0"
@@ -271,7 +271,7 @@
                   },
                   "S3VersionKey": {
                     "id": "S3VersionKey",
-                    "path": "ABWorkshopModule33/AssetParameters/e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68/S3VersionKey",
+                    "path": "DeployAB/AssetParameters/e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68/S3VersionKey",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.107.0"
@@ -279,7 +279,7 @@
                   },
                   "ArtifactHash": {
                     "id": "ArtifactHash",
-                    "path": "ABWorkshopModule33/AssetParameters/e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68/ArtifactHash",
+                    "path": "DeployAB/AssetParameters/e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68/ArtifactHash",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.107.0"
@@ -293,11 +293,11 @@
               },
               "c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf": {
                 "id": "c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf",
-                "path": "ABWorkshopModule33/AssetParameters/c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf",
+                "path": "DeployAB/AssetParameters/c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf",
                 "children": {
                   "S3Bucket": {
                     "id": "S3Bucket",
-                    "path": "ABWorkshopModule33/AssetParameters/c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf/S3Bucket",
+                    "path": "DeployAB/AssetParameters/c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf/S3Bucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.107.0"
@@ -305,7 +305,7 @@
                   },
                   "S3VersionKey": {
                     "id": "S3VersionKey",
-                    "path": "ABWorkshopModule33/AssetParameters/c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf/S3VersionKey",
+                    "path": "DeployAB/AssetParameters/c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf/S3VersionKey",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.107.0"
@@ -313,7 +313,7 @@
                   },
                   "ArtifactHash": {
                     "id": "ArtifactHash",
-                    "path": "ABWorkshopModule33/AssetParameters/c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf/ArtifactHash",
+                    "path": "DeployAB/AssetParameters/c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf/ArtifactHash",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.107.0"
@@ -327,11 +327,11 @@
               },
               "fcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791": {
                 "id": "fcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791",
-                "path": "ABWorkshopModule33/AssetParameters/fcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791",
+                "path": "DeployAB/AssetParameters/fcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791",
                 "children": {
                   "S3Bucket": {
                     "id": "S3Bucket",
-                    "path": "ABWorkshopModule33/AssetParameters/fcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791/S3Bucket",
+                    "path": "DeployAB/AssetParameters/fcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791/S3Bucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.107.0"
@@ -339,7 +339,7 @@
                   },
                   "S3VersionKey": {
                     "id": "S3VersionKey",
-                    "path": "ABWorkshopModule33/AssetParameters/fcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791/S3VersionKey",
+                    "path": "DeployAB/AssetParameters/fcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791/S3VersionKey",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.107.0"
@@ -347,7 +347,7 @@
                   },
                   "ArtifactHash": {
                     "id": "ArtifactHash",
-                    "path": "ABWorkshopModule33/AssetParameters/fcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791/ArtifactHash",
+                    "path": "DeployAB/AssetParameters/fcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791/ArtifactHash",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.107.0"
@@ -361,11 +361,11 @@
               },
               "492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37": {
                 "id": "492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37",
-                "path": "ABWorkshopModule33/AssetParameters/492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37",
+                "path": "DeployAB/AssetParameters/492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37",
                 "children": {
                   "S3Bucket": {
                     "id": "S3Bucket",
-                    "path": "ABWorkshopModule33/AssetParameters/492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37/S3Bucket",
+                    "path": "DeployAB/AssetParameters/492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37/S3Bucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.107.0"
@@ -373,7 +373,7 @@
                   },
                   "S3VersionKey": {
                     "id": "S3VersionKey",
-                    "path": "ABWorkshopModule33/AssetParameters/492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37/S3VersionKey",
+                    "path": "DeployAB/AssetParameters/492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37/S3VersionKey",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.107.0"
@@ -381,7 +381,7 @@
                   },
                   "ArtifactHash": {
                     "id": "ArtifactHash",
-                    "path": "ABWorkshopModule33/AssetParameters/492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37/ArtifactHash",
+                    "path": "DeployAB/AssetParameters/492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37/ArtifactHash",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.107.0"
@@ -395,11 +395,11 @@
               },
               "8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473df": {
                 "id": "8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473df",
-                "path": "ABWorkshopModule33/AssetParameters/8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473df",
+                "path": "DeployAB/AssetParameters/8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473df",
                 "children": {
                   "S3Bucket": {
                     "id": "S3Bucket",
-                    "path": "ABWorkshopModule33/AssetParameters/8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473df/S3Bucket",
+                    "path": "DeployAB/AssetParameters/8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473df/S3Bucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.107.0"
@@ -407,7 +407,7 @@
                   },
                   "S3VersionKey": {
                     "id": "S3VersionKey",
-                    "path": "ABWorkshopModule33/AssetParameters/8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473df/S3VersionKey",
+                    "path": "DeployAB/AssetParameters/8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473df/S3VersionKey",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.107.0"
@@ -415,7 +415,7 @@
                   },
                   "ArtifactHash": {
                     "id": "ArtifactHash",
-                    "path": "ABWorkshopModule33/AssetParameters/8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473df/ArtifactHash",
+                    "path": "DeployAB/AssetParameters/8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473df/ArtifactHash",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.107.0"
@@ -435,15 +435,15 @@
           },
           "Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C": {
             "id": "Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C",
-            "path": "ABWorkshopModule33/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C",
+            "path": "DeployAB/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C",
             "children": {
               "ServiceRole": {
                 "id": "ServiceRole",
-                "path": "ABWorkshopModule33/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole",
+                "path": "DeployAB/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole",
                 "children": {
                   "Resource": {
                     "id": "Resource",
-                    "path": "ABWorkshopModule33/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource",
+                    "path": "DeployAB/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::IAM::Role",
                       "aws:cdk:cloudformation:props": {
@@ -482,11 +482,11 @@
                   },
                   "DefaultPolicy": {
                     "id": "DefaultPolicy",
-                    "path": "ABWorkshopModule33/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy",
+                    "path": "DeployAB/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy",
                     "children": {
                       "Resource": {
                         "id": "Resource",
-                        "path": "ABWorkshopModule33/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource",
+                        "path": "DeployAB/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::IAM::Policy",
                           "aws:cdk:cloudformation:props": {
@@ -596,11 +596,11 @@
               },
               "Code": {
                 "id": "Code",
-                "path": "ABWorkshopModule33/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Code",
+                "path": "DeployAB/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Code",
                 "children": {
                   "Stage": {
                     "id": "Stage",
-                    "path": "ABWorkshopModule33/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Code/Stage",
+                    "path": "DeployAB/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Code/Stage",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.AssetStaging",
                       "version": "1.107.0"
@@ -608,7 +608,7 @@
                   },
                   "AssetBucket": {
                     "id": "AssetBucket",
-                    "path": "ABWorkshopModule33/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Code/AssetBucket",
+                    "path": "DeployAB/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Code/AssetBucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.Resource",
                       "version": "1.107.0"
@@ -622,7 +622,7 @@
               },
               "Resource": {
                 "id": "Resource",
-                "path": "ABWorkshopModule33/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource",
+                "path": "DeployAB/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::Lambda::Function",
                   "aws:cdk:cloudformation:props": {
@@ -693,15 +693,15 @@
           },
           "LambdaEdgeViewerRequest": {
             "id": "LambdaEdgeViewerRequest",
-            "path": "ABWorkshopModule33/LambdaEdgeViewerRequest",
+            "path": "DeployAB/LambdaEdgeViewerRequest",
             "children": {
               "ServiceRole": {
                 "id": "ServiceRole",
-                "path": "ABWorkshopModule33/LambdaEdgeViewerRequest/ServiceRole",
+                "path": "DeployAB/LambdaEdgeViewerRequest/ServiceRole",
                 "children": {
                   "Resource": {
                     "id": "Resource",
-                    "path": "ABWorkshopModule33/LambdaEdgeViewerRequest/ServiceRole/Resource",
+                    "path": "DeployAB/LambdaEdgeViewerRequest/ServiceRole/Resource",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::IAM::Role",
                       "aws:cdk:cloudformation:props": {
@@ -747,11 +747,11 @@
                   },
                   "DefaultPolicy": {
                     "id": "DefaultPolicy",
-                    "path": "ABWorkshopModule33/LambdaEdgeViewerRequest/ServiceRole/DefaultPolicy",
+                    "path": "DeployAB/LambdaEdgeViewerRequest/ServiceRole/DefaultPolicy",
                     "children": {
                       "Resource": {
                         "id": "Resource",
-                        "path": "ABWorkshopModule33/LambdaEdgeViewerRequest/ServiceRole/DefaultPolicy/Resource",
+                        "path": "DeployAB/LambdaEdgeViewerRequest/ServiceRole/DefaultPolicy/Resource",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::IAM::Policy",
                           "aws:cdk:cloudformation:props": {
@@ -810,11 +810,11 @@
               },
               "Code": {
                 "id": "Code",
-                "path": "ABWorkshopModule33/LambdaEdgeViewerRequest/Code",
+                "path": "DeployAB/LambdaEdgeViewerRequest/Code",
                 "children": {
                   "Stage": {
                     "id": "Stage",
-                    "path": "ABWorkshopModule33/LambdaEdgeViewerRequest/Code/Stage",
+                    "path": "DeployAB/LambdaEdgeViewerRequest/Code/Stage",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.AssetStaging",
                       "version": "1.107.0"
@@ -822,7 +822,7 @@
                   },
                   "AssetBucket": {
                     "id": "AssetBucket",
-                    "path": "ABWorkshopModule33/LambdaEdgeViewerRequest/Code/AssetBucket",
+                    "path": "DeployAB/LambdaEdgeViewerRequest/Code/AssetBucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.Resource",
                       "version": "1.107.0"
@@ -836,7 +836,7 @@
               },
               "Resource": {
                 "id": "Resource",
-                "path": "ABWorkshopModule33/LambdaEdgeViewerRequest/Resource",
+                "path": "DeployAB/LambdaEdgeViewerRequest/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::Lambda::Function",
                   "aws:cdk:cloudformation:props": {
@@ -895,11 +895,11 @@
               },
               "CurrentVersion": {
                 "id": "CurrentVersion",
-                "path": "ABWorkshopModule33/LambdaEdgeViewerRequest/CurrentVersion",
+                "path": "DeployAB/LambdaEdgeViewerRequest/CurrentVersion",
                 "children": {
                   "Resource": {
                     "id": "Resource",
-                    "path": "ABWorkshopModule33/LambdaEdgeViewerRequest/CurrentVersion/Resource",
+                    "path": "DeployAB/LambdaEdgeViewerRequest/CurrentVersion/Resource",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::Lambda::Version",
                       "aws:cdk:cloudformation:props": {
@@ -927,15 +927,15 @@
           },
           "LambdaEdgeViewerResponse": {
             "id": "LambdaEdgeViewerResponse",
-            "path": "ABWorkshopModule33/LambdaEdgeViewerResponse",
+            "path": "DeployAB/LambdaEdgeViewerResponse",
             "children": {
               "ServiceRole": {
                 "id": "ServiceRole",
-                "path": "ABWorkshopModule33/LambdaEdgeViewerResponse/ServiceRole",
+                "path": "DeployAB/LambdaEdgeViewerResponse/ServiceRole",
                 "children": {
                   "Resource": {
                     "id": "Resource",
-                    "path": "ABWorkshopModule33/LambdaEdgeViewerResponse/ServiceRole/Resource",
+                    "path": "DeployAB/LambdaEdgeViewerResponse/ServiceRole/Resource",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::IAM::Role",
                       "aws:cdk:cloudformation:props": {
@@ -987,11 +987,11 @@
               },
               "Code": {
                 "id": "Code",
-                "path": "ABWorkshopModule33/LambdaEdgeViewerResponse/Code",
+                "path": "DeployAB/LambdaEdgeViewerResponse/Code",
                 "children": {
                   "Stage": {
                     "id": "Stage",
-                    "path": "ABWorkshopModule33/LambdaEdgeViewerResponse/Code/Stage",
+                    "path": "DeployAB/LambdaEdgeViewerResponse/Code/Stage",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.AssetStaging",
                       "version": "1.107.0"
@@ -999,7 +999,7 @@
                   },
                   "AssetBucket": {
                     "id": "AssetBucket",
-                    "path": "ABWorkshopModule33/LambdaEdgeViewerResponse/Code/AssetBucket",
+                    "path": "DeployAB/LambdaEdgeViewerResponse/Code/AssetBucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.Resource",
                       "version": "1.107.0"
@@ -1013,7 +1013,7 @@
               },
               "Resource": {
                 "id": "Resource",
-                "path": "ABWorkshopModule33/LambdaEdgeViewerResponse/Resource",
+                "path": "DeployAB/LambdaEdgeViewerResponse/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::Lambda::Function",
                   "aws:cdk:cloudformation:props": {
@@ -1072,11 +1072,11 @@
               },
               "CurrentVersion": {
                 "id": "CurrentVersion",
-                "path": "ABWorkshopModule33/LambdaEdgeViewerResponse/CurrentVersion",
+                "path": "DeployAB/LambdaEdgeViewerResponse/CurrentVersion",
                 "children": {
                   "Resource": {
                     "id": "Resource",
-                    "path": "ABWorkshopModule33/LambdaEdgeViewerResponse/CurrentVersion/Resource",
+                    "path": "DeployAB/LambdaEdgeViewerResponse/CurrentVersion/Resource",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::Lambda::Version",
                       "aws:cdk:cloudformation:props": {
@@ -1104,11 +1104,11 @@
           },
           "RedirectTable": {
             "id": "RedirectTable",
-            "path": "ABWorkshopModule33/RedirectTable",
+            "path": "DeployAB/RedirectTable",
             "children": {
               "Resource": {
                 "id": "Resource",
-                "path": "ABWorkshopModule33/RedirectTable/Resource",
+                "path": "DeployAB/RedirectTable/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::DynamoDB::Table",
                   "aws:cdk:cloudformation:props": {
@@ -1138,7 +1138,7 @@
               },
               "ScalingRole": {
                 "id": "ScalingRole",
-                "path": "ABWorkshopModule33/RedirectTable/ScalingRole",
+                "path": "DeployAB/RedirectTable/ScalingRole",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Resource",
                   "version": "1.107.0"
@@ -1150,26 +1150,26 @@
               "version": "1.107.0"
             }
           },
-          "AB testing distribution": {
-            "id": "AB testing distribution",
-            "path": "ABWorkshopModule33/AB testing distribution",
+          "{{inputs.appName}}": {
+            "id": "{{inputs.appName}}",
+            "path": "DeployAB/{{inputs.appName}}",
             "children": {
               "Origin1": {
                 "id": "Origin1",
-                "path": "ABWorkshopModule33/AB testing distribution/Origin1",
+                "path": "DeployAB/{{inputs.appName}}/Origin1",
                 "children": {
                   "S3Origin": {
                     "id": "S3Origin",
-                    "path": "ABWorkshopModule33/AB testing distribution/Origin1/S3Origin",
+                    "path": "DeployAB/{{inputs.appName}}/Origin1/S3Origin",
                     "children": {
                       "Resource": {
                         "id": "Resource",
-                        "path": "ABWorkshopModule33/AB testing distribution/Origin1/S3Origin/Resource",
+                        "path": "DeployAB/{{inputs.appName}}/Origin1/S3Origin/Resource",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::CloudFront::CloudFrontOriginAccessIdentity",
                           "aws:cdk:cloudformation:props": {
                             "cloudFrontOriginAccessIdentityConfig": {
-                              "comment": "Identity for ABWorkshopModule33ABtestingdistributionOrigin1A62DA4FA"
+                              "comment": "Identity for DeployABABtestingdistributionOrigin1A62DA4FA"
                             }
                           }
                         },
@@ -1192,7 +1192,7 @@
               },
               "Resource": {
                 "id": "Resource",
-                "path": "ABWorkshopModule33/AB testing distribution/Resource",
+                "path": "DeployAB/{{inputs.appName}}/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::CloudFront::Distribution",
                   "aws:cdk:cloudformation:props": {
@@ -1206,7 +1206,7 @@
                               "RegionalDomainName"
                             ]
                           },
-                          "id": "ABWorkshopModule33ABtestingdistributionOrigin1A62DA4FA",
+                          "id": "DeployABABtestingdistributionOrigin1A62DA4FA",
                           "s3OriginConfig": {
                             "originAccessIdentity": {
                               "Fn::Join": [
@@ -1224,7 +1224,7 @@
                       ],
                       "defaultCacheBehavior": {
                         "pathPattern": "*",
-                        "targetOriginId": "ABWorkshopModule33ABtestingdistributionOrigin1A62DA4FA",
+                        "targetOriginId": "DeployABABtestingdistributionOrigin1A62DA4FA",
                         "cachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6",
                         "compress": true,
                         "viewerProtocolPolicy": "redirect-to-https"
@@ -1232,7 +1232,7 @@
                       "cacheBehaviors": [
                         {
                           "pathPattern": "/",
-                          "targetOriginId": "ABWorkshopModule33ABtestingdistributionOrigin1A62DA4FA",
+                          "targetOriginId": "DeployABABtestingdistributionOrigin1A62DA4FA",
                           "cachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6",
                           "compress": true,
                           "viewerProtocolPolicy": "redirect-to-https",
@@ -1271,15 +1271,15 @@
           },
           "MonitoringDashboard": {
             "id": "MonitoringDashboard",
-            "path": "ABWorkshopModule33/MonitoringDashboard",
+            "path": "DeployAB/MonitoringDashboard",
             "children": {
               "MonitoringDashboard": {
                 "id": "MonitoringDashboard",
-                "path": "ABWorkshopModule33/MonitoringDashboard/MonitoringDashboard",
+                "path": "DeployAB/MonitoringDashboard/MonitoringDashboard",
                 "children": {
                   "Resource": {
                     "id": "Resource",
-                    "path": "ABWorkshopModule33/MonitoringDashboard/MonitoringDashboard/Resource",
+                    "path": "DeployAB/MonitoringDashboard/MonitoringDashboard/Resource",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::CloudWatch::Dashboard",
                       "aws:cdk:cloudformation:props": {
@@ -1405,7 +1405,7 @@
           },
           "CloudFrontURL": {
             "id": "CloudFrontURL",
-            "path": "ABWorkshopModule33/CloudFrontURL",
+            "path": "DeployAB/CloudFrontURL",
             "constructInfo": {
               "fqn": "@aws-cdk/core.CfnOutput",
               "version": "1.107.0"
@@ -1413,11 +1413,11 @@
           },
           "CDKMetadata": {
             "id": "CDKMetadata",
-            "path": "ABWorkshopModule33/CDKMetadata",
+            "path": "DeployAB/CDKMetadata",
             "children": {
               "Default": {
                 "id": "Default",
-                "path": "ABWorkshopModule33/CDKMetadata/Default",
+                "path": "DeployAB/CDKMetadata/Default",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnResource",
                   "version": "1.107.0"
@@ -1425,7 +1425,7 @@
               },
               "Condition": {
                 "id": "Condition",
-                "path": "ABWorkshopModule33/CDKMetadata/Condition",
+                "path": "DeployAB/CDKMetadata/Condition",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnCondition",
                   "version": "1.107.0"

@@ -869,7 +869,7 @@
         }
       },
       "Metadata": {
-        "aws:cdk:path": "ABWorkshopModule31/AB testing distribution/Origin1/S3Origin/Resource"
+        "aws:cdk:path": "ABWorkshopModule31/{{inputs.appName}}/Origin1/S3Origin/Resource"
       }
     },
     "ABtestingdistribution05761D28": {
@@ -936,7 +936,7 @@
         }
       },
       "Metadata": {
-        "aws:cdk:path": "ABWorkshopModule31/AB testing distribution/Resource"
+        "aws:cdk:path": "ABWorkshopModule31/{{inputs.appName}}/Resource"
       }
     },
     "MonitoringDashboard07D6683D": {

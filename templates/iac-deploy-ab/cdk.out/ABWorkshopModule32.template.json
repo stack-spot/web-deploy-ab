@@ -815,7 +815,7 @@
         }
       },
       "Metadata": {
-        "aws:cdk:path": "ABWorkshopModule32/AB testing distribution/Origin1/S3Origin/Resource"
+        "aws:cdk:path": "ABWorkshopModule32/{{inputs.appName}}/Origin1/S3Origin/Resource"
       }
     },
     "ABtestingdistributionOrigin2S3OriginF5D065DA": {
@@ -826,7 +826,7 @@
         }
       },
       "Metadata": {
-        "aws:cdk:path": "ABWorkshopModule32/AB testing distribution/Origin2/S3Origin/Resource"
+        "aws:cdk:path": "ABWorkshopModule32/{{inputs.appName}}/Origin2/S3Origin/Resource"
       }
     },
     "ABtestingdistribution05761D28": {
@@ -922,7 +922,7 @@
         }
       },
       "Metadata": {
-        "aws:cdk:path": "ABWorkshopModule32/AB testing distribution/Resource"
+        "aws:cdk:path": "ABWorkshopModule32/{{inputs.appName}}/Resource"
       }
     },
     "MonitoringDashboard07D6683D": {

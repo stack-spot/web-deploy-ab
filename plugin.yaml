@@ -11,7 +11,7 @@ inputs:
   - label: Enter the path of the folder that will be deployed
     type: text
     name: appBuildPath
-    default: ./public
+    default: ../public
   - label: Enter the text that will be displayed in the title of your application
     type: text
     name: appSiteTitle
