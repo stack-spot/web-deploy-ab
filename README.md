@@ -22,17 +22,17 @@ We have an e-commerce website for selling digital images and we want to modify t
 
 The architecture our website is the following:
 
-![General architecture](resources/readme/architecture.png?width=1024px)
+![General architecture](templates/iac-deploy-ab/resources/readme/architecture.png?width=1024px)
 
 The static resources (html, javascript, css and images) are hosted on S3 and we can imagine having APIs for the dynamic part. We will concentrate on the static part, so our website has only the static part implemented.
 
 The home page (A version) looks like this:
 
-![Homepage - A version](resources/readme/layout_A.png?width=1024px)
+![Homepage - A version](templates/iac-deploy-ab/resources/readme/layout_A.png?width=1024px)
 
 The new layout (B version) has the images on three columns, a buy button and looks like this:
 
-![Homepage - B version](resources/readme/layout_B.png?width=1024px)
+![Homepage - B version](templates/iac-deploy-ab/resources/readme/layout_B.png?width=1024px)
 
 To test the new layout, we want to show it only to a small percentage of visitors. Based on the success of failure of the new layout we would like to be able to increase/decrease this percentage of visitor getting the new layout.
 
