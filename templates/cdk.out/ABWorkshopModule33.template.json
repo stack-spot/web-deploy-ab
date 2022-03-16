@@ -1,0 +1,1120 @@
+{
+  "Resources": {
+    "hostingbucketdeployment9A1F5ECC": {
+      "Type": "AWS::S3::Bucket",
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "Retain",
+      "Metadata": {
+        "aws:cdk:path": "ABWorkshopModule33/hosting-bucket-deployment/Resource"
+      }
+    },
+    "hostingbucketdeploymentPolicy6F59EA36": {
+      "Type": "AWS::S3::BucketPolicy",
+      "Properties": {
+        "Bucket": {
+          "Ref": "hostingbucketdeployment9A1F5ECC"
+        },
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": "s3:GetObject",
+              "Effect": "Allow",
+              "Principal": {
+                "CanonicalUser": {
+                  "Fn::GetAtt": [
+                    "ABtestingdistributionOrigin1S3Origin263A95EF",
+                    "S3CanonicalUserId"
+                  ]
+                }
+              },
+              "Resource": {
+                "Fn::Join": [
+                  "",
+                  [
+                    {
+                      "Fn::GetAtt": [
+                        "hostingbucketdeployment9A1F5ECC",
+                        "Arn"
+                      ]
+                    },
+                    "/*"
+                  ]
+                ]
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ABWorkshopModule33/hosting-bucket-deployment/Policy/Resource"
+      }
+    },
+    "hostingAwsCliLayer65A52CE1": {
+      "Type": "AWS::Lambda::LayerVersion",
+      "Properties": {
+        "Content": {
+          "S3Bucket": {
+            "Ref": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3BucketAEADE8C7"
+          },
+          "S3Key": {
+            "Fn::Join": [
+              "",
+              [
+                {
+                  "Fn::Select": [
+                    0,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3VersionKeyE415415F"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Fn::Select": [
+                    1,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3VersionKeyE415415F"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        },
+        "Description": "/opt/awscli/aws"
+      },
+      "Metadata": {
+        "aws:cdk:path": "ABWorkshopModule33/hosting/AwsCliLayer/Resource",
+        "aws:asset:path": "asset.e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68.zip",
+        "aws:asset:property": "Content"
+      }
+    },
+    "hostingCustomResource8221053F": {
+      "Type": "Custom::CDKBucketDeployment",
+      "Properties": {
+        "ServiceToken": {
+          "Fn::GetAtt": [
+            "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536",
+            "Arn"
+          ]
+        },
+        "SourceBucketNames": [
+          {
+            "Ref": "AssetParametersfcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791S3Bucket10ACC780"
+          }
+        ],
+        "SourceObjectKeys": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                {
+                  "Fn::Select": [
+                    0,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParametersfcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791S3VersionKey2D69F27F"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Fn::Select": [
+                    1,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParametersfcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791S3VersionKey2D69F27F"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ],
+        "DestinationBucketName": {
+          "Ref": "hostingbucketdeployment9A1F5ECC"
+        },
+        "Prune": true
+      },
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete",
+      "Metadata": {
+        "aws:cdk:path": "ABWorkshopModule33/hosting/CustomResource/Default"
+      }
+    },
+    "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+              ]
+            ]
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "ABWorkshopModule33/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource"
+      }
+    },
+    "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF": {
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "s3:GetObject*",
+                "s3:GetBucket*",
+                "s3:List*"
+              ],
+              "Effect": "Allow",
+              "Resource": [
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:",
+                      {
+                        "Ref": "AWS::Partition"
+                      },
+                      ":s3:::",
+                      {
+                        "Ref": "AssetParametersfcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791S3Bucket10ACC780"
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:",
+                      {
+                        "Ref": "AWS::Partition"
+                      },
+                      ":s3:::",
+                      {
+                        "Ref": "AssetParametersfcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791S3Bucket10ACC780"
+                      },
+                      "/*"
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "Action": [
+                "s3:GetObject*",
+                "s3:GetBucket*",
+                "s3:List*",
+                "s3:DeleteObject*",
+                "s3:PutObject*",
+                "s3:Abort*"
+              ],
+              "Effect": "Allow",
+              "Resource": [
+                {
+                  "Fn::GetAtt": [
+                    "hostingbucketdeployment9A1F5ECC",
+                    "Arn"
+                  ]
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      {
+                        "Fn::GetAtt": [
+                          "hostingbucketdeployment9A1F5ECC",
+                          "Arn"
+                        ]
+                      },
+                      "/*"
+                    ]
+                  ]
+                }
+              ]
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "PolicyName": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF",
+        "Roles": [
+          {
+            "Ref": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "ABWorkshopModule33/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource"
+      }
+    },
+    "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Ref": "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfS3Bucket55EFA30C"
+          },
+          "S3Key": {
+            "Fn::Join": [
+              "",
+              [
+                {
+                  "Fn::Select": [
+                    0,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfS3VersionKey60329B70"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Fn::Select": [
+                    1,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfS3VersionKey60329B70"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        },
+        "Role": {
+          "Fn::GetAtt": [
+            "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265",
+            "Arn"
+          ]
+        },
+        "Handler": "index.handler",
+        "Layers": [
+          {
+            "Ref": "hostingAwsCliLayer65A52CE1"
+          }
+        ],
+        "Runtime": "python3.6",
+        "Timeout": 900
+      },
+      "DependsOn": [
+        "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF",
+        "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "ABWorkshopModule33/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource",
+        "aws:asset:path": "asset.c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf",
+        "aws:asset:property": "Code"
+      }
+    },
+    "LambdaEdgeViewerRequestServiceRole2535341A": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              }
+            },
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "edgelambda.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+              ]
+            ]
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "ABWorkshopModule33/LambdaEdgeViewerRequest/ServiceRole/Resource"
+      }
+    },
+    "LambdaEdgeViewerRequestServiceRoleDefaultPolicy5F5D266A": {
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "dynamodb:BatchGetItem",
+                "dynamodb:GetRecords",
+                "dynamodb:GetShardIterator",
+                "dynamodb:Query",
+                "dynamodb:GetItem",
+                "dynamodb:Scan",
+                "dynamodb:ConditionCheckItem"
+              ],
+              "Effect": "Allow",
+              "Resource": [
+                {
+                  "Fn::GetAtt": [
+                    "RedirectTable0B40696D",
+                    "Arn"
+                  ]
+                },
+                {
+                  "Ref": "AWS::NoValue"
+                }
+              ]
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "PolicyName": "LambdaEdgeViewerRequestServiceRoleDefaultPolicy5F5D266A",
+        "Roles": [
+          {
+            "Ref": "LambdaEdgeViewerRequestServiceRole2535341A"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "ABWorkshopModule33/LambdaEdgeViewerRequest/ServiceRole/DefaultPolicy/Resource"
+      }
+    },
+    "LambdaEdgeViewerRequestB3CC60EE": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Ref": "AssetParameters492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37S3Bucket78CB7A00"
+          },
+          "S3Key": {
+            "Fn::Join": [
+              "",
+              [
+                {
+                  "Fn::Select": [
+                    0,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameters492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37S3VersionKeyC63962F4"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Fn::Select": [
+                    1,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameters492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37S3VersionKeyC63962F4"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        },
+        "Role": {
+          "Fn::GetAtt": [
+            "LambdaEdgeViewerRequestServiceRole2535341A",
+            "Arn"
+          ]
+        },
+        "Handler": "index.handler",
+        "Runtime": "nodejs14.x"
+      },
+      "DependsOn": [
+        "LambdaEdgeViewerRequestServiceRoleDefaultPolicy5F5D266A",
+        "LambdaEdgeViewerRequestServiceRole2535341A"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "ABWorkshopModule33/LambdaEdgeViewerRequest/Resource",
+        "aws:asset:path": "asset.492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37",
+        "aws:asset:property": "Code"
+      }
+    },
+    "LambdaEdgeViewerRequestCurrentVersionCE19CEC5f2caa18499446cedefd50a924d8f1ea4": {
+      "Type": "AWS::Lambda::Version",
+      "Properties": {
+        "FunctionName": {
+          "Ref": "LambdaEdgeViewerRequestB3CC60EE"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ABWorkshopModule33/LambdaEdgeViewerRequest/CurrentVersion/Resource"
+      }
+    },
+    "LambdaEdgeViewerResponseServiceRoleEE7AB7EC": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              }
+            },
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "edgelambda.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+              ]
+            ]
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "ABWorkshopModule33/LambdaEdgeViewerResponse/ServiceRole/Resource"
+      }
+    },
+    "LambdaEdgeViewerResponseC8EE4243": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Ref": "AssetParameters8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473dfS3Bucket53BEC018"
+          },
+          "S3Key": {
+            "Fn::Join": [
+              "",
+              [
+                {
+                  "Fn::Select": [
+                    0,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameters8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473dfS3VersionKey0B87FB85"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Fn::Select": [
+                    1,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameters8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473dfS3VersionKey0B87FB85"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        },
+        "Role": {
+          "Fn::GetAtt": [
+            "LambdaEdgeViewerResponseServiceRoleEE7AB7EC",
+            "Arn"
+          ]
+        },
+        "Handler": "index.handler",
+        "Runtime": "nodejs14.x"
+      },
+      "DependsOn": [
+        "LambdaEdgeViewerResponseServiceRoleEE7AB7EC"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "ABWorkshopModule33/LambdaEdgeViewerResponse/Resource",
+        "aws:asset:path": "asset.8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473df",
+        "aws:asset:property": "Code"
+      }
+    },
+    "LambdaEdgeViewerResponseCurrentVersion6F2F1900455b5f002292463bb8adc33cec4a8062": {
+      "Type": "AWS::Lambda::Version",
+      "Properties": {
+        "FunctionName": {
+          "Ref": "LambdaEdgeViewerResponseC8EE4243"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ABWorkshopModule33/LambdaEdgeViewerResponse/CurrentVersion/Resource"
+      }
+    },
+    "RedirectTable0B40696D": {
+      "Type": "AWS::DynamoDB::Table",
+      "Properties": {
+        "KeySchema": [
+          {
+            "AttributeName": "path",
+            "KeyType": "HASH"
+          }
+        ],
+        "AttributeDefinitions": [
+          {
+            "AttributeName": "path",
+            "AttributeType": "S"
+          }
+        ],
+        "ProvisionedThroughput": {
+          "ReadCapacityUnits": 5,
+          "WriteCapacityUnits": 5
+        },
+        "TableName": "WebsiteRedirection"
+      },
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete",
+      "Metadata": {
+        "aws:cdk:path": "ABWorkshopModule33/RedirectTable/Resource"
+      }
+    },
+    "ABtestingdistributionOrigin1S3Origin263A95EF": {
+      "Type": "AWS::CloudFront::CloudFrontOriginAccessIdentity",
+      "Properties": {
+        "CloudFrontOriginAccessIdentityConfig": {
+          "Comment": "Identity for ABWorkshopModule33ABtestingdistributionOrigin1A62DA4FA"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ABWorkshopModule33/AB testing distribution/Origin1/S3Origin/Resource"
+      }
+    },
+    "ABtestingdistribution05761D28": {
+      "Type": "AWS::CloudFront::Distribution",
+      "Properties": {
+        "DistributionConfig": {
+          "CacheBehaviors": [
+            {
+              "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6",
+              "Compress": true,
+              "LambdaFunctionAssociations": [
+                {
+                  "EventType": "viewer-request",
+                  "LambdaFunctionARN": {
+                    "Ref": "LambdaEdgeViewerRequestCurrentVersionCE19CEC5f2caa18499446cedefd50a924d8f1ea4"
+                  }
+                },
+                {
+                  "EventType": "viewer-response",
+                  "LambdaFunctionARN": {
+                    "Ref": "LambdaEdgeViewerResponseCurrentVersion6F2F1900455b5f002292463bb8adc33cec4a8062"
+                  }
+                }
+              ],
+              "PathPattern": "/",
+              "TargetOriginId": "ABWorkshopModule33ABtestingdistributionOrigin1A62DA4FA",
+              "ViewerProtocolPolicy": "redirect-to-https"
+            }
+          ],
+          "Comment": "AB Testing Workshop - Module 3-3",
+          "DefaultCacheBehavior": {
+            "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6",
+            "Compress": true,
+            "TargetOriginId": "ABWorkshopModule33ABtestingdistributionOrigin1A62DA4FA",
+            "ViewerProtocolPolicy": "redirect-to-https"
+          },
+          "Enabled": true,
+          "HttpVersion": "http2",
+          "IPV6Enabled": true,
+          "Origins": [
+            {
+              "DomainName": {
+                "Fn::GetAtt": [
+                  "hostingbucketdeployment9A1F5ECC",
+                  "RegionalDomainName"
+                ]
+              },
+              "Id": "ABWorkshopModule33ABtestingdistributionOrigin1A62DA4FA",
+              "S3OriginConfig": {
+                "OriginAccessIdentity": {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "origin-access-identity/cloudfront/",
+                      {
+                        "Ref": "ABtestingdistributionOrigin1S3Origin263A95EF"
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ABWorkshopModule33/AB testing distribution/Resource"
+      }
+    },
+    "MonitoringDashboard07D6683D": {
+      "Type": "AWS::CloudWatch::Dashboard",
+      "Properties": {
+        "DashboardBody": {
+          "Fn::Join": [
+            "",
+            [
+              "{\"widgets\":[{\"type\":\"log\",\"width\":6,\"height\":6,\"x\":0,\"y\":0,\"properties\":{\"view\":\"pie\",\"title\":\"US-East (N. Virginia)\",\"region\":\"us-east-1\",\"query\":\"SOURCE '/aws/lambda/us-east-1.",
+              {
+                "Ref": "LambdaEdgeViewerRequestB3CC60EE"
+              },
+              "' | fields @timestamp, @message\\n| filter @message like /X_Experiment_V/\\n| parse \\\"* *\\\" as a,version\\n| stats count(*) as VERSIONS by version as total\"}},{\"type\":\"log\",\"width\":6,\"height\":6,\"x\":6,\"y\":0,\"properties\":{\"view\":\"pie\",\"title\":\"US East (Ohio)\",\"region\":\"us-east-2\",\"query\":\"SOURCE '/aws/lambda/us-east-1.",
+              {
+                "Ref": "LambdaEdgeViewerRequestB3CC60EE"
+              },
+              "' | fields @timestamp, @message\\n| filter @message like /X_Experiment_V/\\n| parse \\\"* *\\\" as a,version\\n| stats count(*) as VERSIONS by version as total\"}},{\"type\":\"log\",\"width\":6,\"height\":6,\"x\":12,\"y\":0,\"properties\":{\"view\":\"pie\",\"title\":\"EU (London)\",\"region\":\"eu-west-2\",\"query\":\"SOURCE '/aws/lambda/us-east-1.",
+              {
+                "Ref": "LambdaEdgeViewerRequestB3CC60EE"
+              },
+              "' | fields @timestamp, @message\\n| filter @message like /X_Experiment_V/\\n| parse \\\"* *\\\" as a,version\\n| stats count(*) as VERSIONS by version as total\"}},{\"type\":\"log\",\"width\":6,\"height\":6,\"x\":18,\"y\":0,\"properties\":{\"view\":\"pie\",\"title\":\"EU (Ireland)\",\"region\":\"eu-west-1\",\"query\":\"SOURCE '/aws/lambda/us-east-1.",
+              {
+                "Ref": "LambdaEdgeViewerRequestB3CC60EE"
+              },
+              "' | fields @timestamp, @message\\n| filter @message like /X_Experiment_V/\\n| parse \\\"* *\\\" as a,version\\n| stats count(*) as VERSIONS by version as total\"}},{\"type\":\"log\",\"width\":6,\"height\":6,\"x\":0,\"y\":6,\"properties\":{\"view\":\"pie\",\"title\":\"US-East (N. Virginia)\",\"region\":\"us-east-1\",\"query\":\"SOURCE '/aws/lambda/us-east-1.",
+              {
+                "Ref": "LambdaEdgeViewerRequestB3CC60EE"
+              },
+              "' | fields @timestamp, @message\\n| filter @message like /X_Experiment_U/\\n| parse \\\"* *\\\" as a,version\\n| stats count(*) as USERS by version as total\"}},{\"type\":\"log\",\"width\":6,\"height\":6,\"x\":6,\"y\":6,\"properties\":{\"view\":\"pie\",\"title\":\"US East (Ohio)\",\"region\":\"us-east-2\",\"query\":\"SOURCE '/aws/lambda/us-east-1.",
+              {
+                "Ref": "LambdaEdgeViewerRequestB3CC60EE"
+              },
+              "' | fields @timestamp, @message\\n| filter @message like /X_Experiment_U/\\n| parse \\\"* *\\\" as a,version\\n| stats count(*) as USERS by version as total\"}},{\"type\":\"log\",\"width\":6,\"height\":6,\"x\":12,\"y\":6,\"properties\":{\"view\":\"pie\",\"title\":\"EU (London)\",\"region\":\"eu-west-2\",\"query\":\"SOURCE '/aws/lambda/us-east-1.",
+              {
+                "Ref": "LambdaEdgeViewerRequestB3CC60EE"
+              },
+              "' | fields @timestamp, @message\\n| filter @message like /X_Experiment_U/\\n| parse \\\"* *\\\" as a,version\\n| stats count(*) as USERS by version as total\"}},{\"type\":\"log\",\"width\":6,\"height\":6,\"x\":18,\"y\":6,\"properties\":{\"view\":\"pie\",\"title\":\"EU (Ireland)\",\"region\":\"eu-west-1\",\"query\":\"SOURCE '/aws/lambda/us-east-1.",
+              {
+                "Ref": "LambdaEdgeViewerRequestB3CC60EE"
+              },
+              "' | fields @timestamp, @message\\n| filter @message like /X_Experiment_U/\\n| parse \\\"* *\\\" as a,version\\n| stats count(*) as USERS by version as total\"}},{\"type\":\"metric\",\"width\":24,\"height\":6,\"x\":0,\"y\":12,\"properties\":{\"view\":\"singleValue\",\"title\":\"Lambda invocations - Viewer request\",\"region\":\"",
+              {
+                "Ref": "AWS::Region"
+              },
+              "\",\"metrics\":[[{\"label\":\"All regions (sum)\",\"expression\":\"m1+m2+m3+m4+m5+m6+m7+m8+m9+m10+m11+m12+m13+m14\"}],[\"AWS/Lambda\",\"Invocations\",\"FunctionName\",\"us-east-1.",
+              {
+                "Ref": "LambdaEdgeViewerRequestB3CC60EE"
+              },
+              "\",{\"label\":\"US-East (N. Virginia)\",\"region\":\"us-east-1\",\"stat\":\"Sum\",\"visible\":false,\"id\":\"m1\"}],[\"AWS/Lambda\",\"Invocations\",\"FunctionName\",\"us-east-1.",
+              {
+                "Ref": "LambdaEdgeViewerRequestB3CC60EE"
+              },
+              "\",{\"label\":\"US-East (Ohio)\",\"region\":\"us-east-2\",\"stat\":\"Sum\",\"id\":\"m2\"}],[\"AWS/Lambda\",\"Invocations\",\"FunctionName\",\"us-east-1.",
+              {
+                "Ref": "LambdaEdgeViewerRequestB3CC60EE"
+              },
+              "\",{\"label\":\"US-West (N. California)\",\"region\":\"us-west-1\",\"stat\":\"Sum\",\"id\":\"m3\"}],[\"AWS/Lambda\",\"Invocations\",\"FunctionName\",\"us-east-1.",
+              {
+                "Ref": "LambdaEdgeViewerRequestB3CC60EE"
+              },
+              "\",{\"label\":\"Asia Pacific (Mumbai)\",\"region\":\"ap-south-1\",\"stat\":\"Sum\",\"id\":\"m4\"}],[\"AWS/Lambda\",\"Invocations\",\"FunctionName\",\"us-east-1.",
+              {
+                "Ref": "LambdaEdgeViewerRequestB3CC60EE"
+              },
+              "\",{\"label\":\"Asia Pacific (Tokyo)\",\"region\":\"ap-northeast-1\",\"stat\":\"Sum\",\"id\":\"m5\"}],[\"AWS/Lambda\",\"Invocations\",\"FunctionName\",\"us-east-1.",
+              {
+                "Ref": "LambdaEdgeViewerRequestB3CC60EE"
+              },
+              "\",{\"label\":\"Asia Pacific (Seoul)\",\"region\":\"ap-northeast-2\",\"stat\":\"Sum\",\"id\":\"m6\"}],[\"AWS/Lambda\",\"Invocations\",\"FunctionName\",\"us-east-1.",
+              {
+                "Ref": "LambdaEdgeViewerRequestB3CC60EE"
+              },
+              "\",{\"label\":\"Asia Pacific (Singapore)\",\"region\":\"ap-southeast-1\",\"stat\":\"Sum\",\"id\":\"m7\"}],[\"AWS/Lambda\",\"Invocations\",\"FunctionName\",\"us-east-1.",
+              {
+                "Ref": "LambdaEdgeViewerRequestB3CC60EE"
+              },
+              "\",{\"label\":\"Asia Pacific (Sydney)\",\"region\":\"ap-southeast-2\",\"stat\":\"Sum\",\"id\":\"m8\"}],[\"AWS/Lambda\",\"Invocations\",\"FunctionName\",\"us-east-1.",
+              {
+                "Ref": "LambdaEdgeViewerRequestB3CC60EE"
+              },
+              "\",{\"label\":\"EU (Ireland)\",\"region\":\"eu-west-1\",\"stat\":\"Sum\",\"id\":\"m9\"}],[\"AWS/Lambda\",\"Invocations\",\"FunctionName\",\"us-east-1.",
+              {
+                "Ref": "LambdaEdgeViewerRequestB3CC60EE"
+              },
+              "\",{\"label\":\"EU (London)\",\"region\":\"eu-west-2\",\"stat\":\"Sum\",\"id\":\"m10\"}],[\"AWS/Lambda\",\"Invocations\",\"FunctionName\",\"us-east-1.",
+              {
+                "Ref": "LambdaEdgeViewerRequestB3CC60EE"
+              },
+              "\",{\"label\":\"EU (Paris)\",\"region\":\"eu-west-3\",\"stat\":\"Sum\",\"id\":\"m11\"}],[\"AWS/Lambda\",\"Invocations\",\"FunctionName\",\"us-east-1.",
+              {
+                "Ref": "LambdaEdgeViewerRequestB3CC60EE"
+              },
+              "\",{\"label\":\"EU (Frankfurt)\",\"region\":\"eu-central-1\",\"stat\":\"Sum\",\"id\":\"m12\"}],[\"AWS/Lambda\",\"Invocations\",\"FunctionName\",\"us-east-1.",
+              {
+                "Ref": "LambdaEdgeViewerRequestB3CC60EE"
+              },
+              "\",{\"label\":\"South America (Sao Paulo)\",\"region\":\"sa-east-1\",\"stat\":\"Sum\",\"id\":\"m13\"}],[\"AWS/Lambda\",\"Invocations\",\"FunctionName\",\"us-east-1.",
+              {
+                "Ref": "LambdaEdgeViewerRequestB3CC60EE"
+              },
+              "\",{\"label\":\"All regions (sum)\",\"region\":\"us-east-1\",\"stat\":\"Sum\",\"id\":\"m14\"}]],\"setPeriodToTimeRange\":true}}]}"
+            ]
+          ]
+        },
+        "DashboardName": "ABTestingWorkshopModule33"
+      },
+      "Metadata": {
+        "aws:cdk:path": "ABWorkshopModule33/MonitoringDashboard/MonitoringDashboard/Resource"
+      }
+    },
+    "CDKMetadata": {
+      "Type": "AWS::CDK::Metadata",
+      "Properties": {
+        "Analytics": "v2:deflate64:H4sIAAAAAAAAE3VSwW7CMAz9lt3TQFVpu44VIU2aBIJp9zQxEEgTFCdDVdR/n9NS4LKTn50Xv2cnJS/nb3z+8i6uWEh1niXpPPC0C0KeWe0sBh9lYAtECFQ8aHtgW0AXvQRWRwyufaR7+4w3wosWAvicrGO4xJARNVU6aGd7lkUTVjx9RHmG4fSGxrBxRsvuUR7znmFVJAUX47oWbODj4fJeYCK7RT6Y7pkRbaMET9TmS3Tgf8AjybMdzWIgOLuKVmZD7A6IescTnWo32DMtWp62zowz5/iwOplUnRWtUw1P36IZmQPomTQuqr13ZD0tNW1YN3GQWntNC15ICYifiibRYWhZ5wurfOE/xnObm8BVBHkkAYHHxgmvBtqU9NNaCpNXUtBLSKP54oq10cOWemadAn7C2W/5ysuKPskJtS58JNEW+HaMfwejYztBAgAA"
+      },
+      "Metadata": {
+        "aws:cdk:path": "ABWorkshopModule33/CDKMetadata/Default"
+      },
+      "Condition": "CDKMetadataAvailable"
+    }
+  },
+  "Parameters": {
+    "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3BucketAEADE8C7": {
+      "Type": "String",
+      "Description": "S3 bucket for asset \"e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68\""
+    },
+    "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3VersionKeyE415415F": {
+      "Type": "String",
+      "Description": "S3 key for asset version \"e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68\""
+    },
+    "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68ArtifactHashD9A515C3": {
+      "Type": "String",
+      "Description": "Artifact hash for asset \"e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68\""
+    },
+    "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfS3Bucket55EFA30C": {
+      "Type": "String",
+      "Description": "S3 bucket for asset \"c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf\""
+    },
+    "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfS3VersionKey60329B70": {
+      "Type": "String",
+      "Description": "S3 key for asset version \"c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf\""
+    },
+    "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfArtifactHash85F58E48": {
+      "Type": "String",
+      "Description": "Artifact hash for asset \"c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf\""
+    },
+    "AssetParametersfcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791S3Bucket10ACC780": {
+      "Type": "String",
+      "Description": "S3 bucket for asset \"fcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791\""
+    },
+    "AssetParametersfcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791S3VersionKey2D69F27F": {
+      "Type": "String",
+      "Description": "S3 key for asset version \"fcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791\""
+    },
+    "AssetParametersfcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791ArtifactHash0E915A40": {
+      "Type": "String",
+      "Description": "Artifact hash for asset \"fcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791\""
+    },
+    "AssetParameters492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37S3Bucket78CB7A00": {
+      "Type": "String",
+      "Description": "S3 bucket for asset \"492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37\""
+    },
+    "AssetParameters492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37S3VersionKeyC63962F4": {
+      "Type": "String",
+      "Description": "S3 key for asset version \"492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37\""
+    },
+    "AssetParameters492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37ArtifactHashC9278BA1": {
+      "Type": "String",
+      "Description": "Artifact hash for asset \"492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37\""
+    },
+    "AssetParameters8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473dfS3Bucket53BEC018": {
+      "Type": "String",
+      "Description": "S3 bucket for asset \"8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473df\""
+    },
+    "AssetParameters8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473dfS3VersionKey0B87FB85": {
+      "Type": "String",
+      "Description": "S3 key for asset version \"8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473df\""
+    },
+    "AssetParameters8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473dfArtifactHash50883CCE": {
+      "Type": "String",
+      "Description": "Artifact hash for asset \"8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473df\""
+    }
+  },
+  "Outputs": {
+    "CloudFrontURL": {
+      "Description": "The CloudFront distribution URL",
+      "Value": {
+        "Fn::Join": [
+          "",
+          [
+            "https://",
+            {
+              "Fn::GetAtt": [
+                "ABtestingdistribution05761D28",
+                "DomainName"
+              ]
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "Conditions": {
+    "CDKMetadataAvailable": {
+      "Fn::Or": [
+        {
+          "Fn::Or": [
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "af-south-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "ap-east-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "ap-northeast-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "ap-northeast-2"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "ap-south-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "ap-southeast-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "ap-southeast-2"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "ca-central-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "cn-north-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "cn-northwest-1"
+              ]
+            }
+          ]
+        },
+        {
+          "Fn::Or": [
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "eu-central-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "eu-north-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "eu-south-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "eu-west-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "eu-west-2"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "eu-west-3"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "me-south-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "sa-east-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "us-east-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "us-east-2"
+              ]
+            }
+          ]
+        },
+        {
+          "Fn::Or": [
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "us-west-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "us-west-2"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

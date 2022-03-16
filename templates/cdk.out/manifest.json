@@ -1,0 +1,1343 @@
+{
+  "version": "11.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "ABWorkshopModule33": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "ABWorkshopModule33.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/ABWorkshopModule33": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68.zip",
+              "id": "e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68",
+              "packaging": "file",
+              "sourceHash": "e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68",
+              "s3BucketParameter": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3BucketAEADE8C7",
+              "s3KeyParameter": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3VersionKeyE415415F",
+              "artifactHashParameter": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68ArtifactHashD9A515C3"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/construct-compat.ts:451:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "Module_3_3.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:145:40)",
+              "AssetCode.bind (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
+              "new LayerVersion (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:189:29)",
+              "new AwsCliLayer (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.ts:12:5)",
+              "new BucketDeployment (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:199:16)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:36:5)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf",
+              "id": "c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf",
+              "packaging": "zip",
+              "sourceHash": "c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf",
+              "s3BucketParameter": "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfS3Bucket55EFA30C",
+              "s3KeyParameter": "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfS3VersionKey60329B70",
+              "artifactHashParameter": "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfArtifactHash85F58E48"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/construct-compat.ts:451:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "Module_3_3.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:145:40)",
+              "AssetCode.bind (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
+              "new Function (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/function.ts:600:29)",
+              "SingletonFunction.ensureLambda (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:134:12)",
+              "new SingletonFunction (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:56:32)",
+              "new BucketDeployment (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:196:21)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:36:5)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.fcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791",
+              "id": "fcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791",
+              "packaging": "zip",
+              "sourceHash": "fcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791",
+              "s3BucketParameter": "AssetParametersfcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791S3Bucket10ACC780",
+              "s3KeyParameter": "AssetParametersfcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791S3VersionKey2D69F27F",
+              "artifactHashParameter": "AssetParametersfcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791ArtifactHash0E915A40"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/construct-compat.ts:451:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "Module_3_3.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:145:40)",
+              "Object.bind (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:89:23)",
+              "/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:213:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:213:51)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:36:5)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37",
+              "id": "492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37",
+              "packaging": "zip",
+              "sourceHash": "492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37",
+              "s3BucketParameter": "AssetParameters492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37S3Bucket78CB7A00",
+              "s3KeyParameter": "AssetParameters492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37S3VersionKeyC63962F4",
+              "artifactHashParameter": "AssetParameters492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37ArtifactHashC9278BA1"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/construct-compat.ts:451:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "Module_3_3.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:145:40)",
+              "AssetCode.bind (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
+              "new Function (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/function.ts:600:29)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:41:37)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473df",
+              "id": "8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473df",
+              "packaging": "zip",
+              "sourceHash": "8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473df",
+              "s3BucketParameter": "AssetParameters8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473dfS3Bucket53BEC018",
+              "s3KeyParameter": "AssetParameters8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473dfS3VersionKey0B87FB85",
+              "artifactHashParameter": "AssetParameters8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473dfArtifactHash50883CCE"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/construct-compat.ts:451:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "Module_3_3.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:145:40)",
+              "AssetCode.bind (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
+              "new Function (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/function.ts:600:29)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:47:38)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/hosting-bucket-deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "hostingbucketdeployment9A1F5ECC",
+            "trace": [
+              "new Bucket (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1331:22)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:34:27)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/hosting-bucket-deployment/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "hostingbucketdeploymentPolicy6F59EA36",
+            "trace": [
+              "new BucketPolicy (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3/lib/bucket-policy.ts:42:21)",
+              "Bucket.addToResourcePolicy (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:504:21)",
+              "S3BucketOrigin.bind (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-cloudfront-origins/lib/s3-origin.ts:88:19)",
+              "S3Origin.bind (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-cloudfront-origins/lib/s3-origin.ts:50:24)",
+              "Distribution.addOrigin (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:340:39)",
+              "new Distribution (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:272:27)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:65:28)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/hosting/AwsCliLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "hostingAwsCliLayer65A52CE1",
+            "trace": [
+              "new LayerVersion (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:197:39)",
+              "new AwsCliLayer (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.ts:12:5)",
+              "new BucketDeployment (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:199:16)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:36:5)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/hosting/CustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "hostingCustomResource8221053F",
+            "trace": [
+              "new CustomResource (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/custom-resource.ts:119:21)",
+              "new BucketDeployment (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:224:5)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:36:5)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/AssetParameters/e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3BucketAEADE8C7",
+            "trace": [
+              "new FileAssetParameters (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "Module_3_3.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:145:40)",
+              "AssetCode.bind (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
+              "new LayerVersion (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:189:29)",
+              "new AwsCliLayer (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.ts:12:5)",
+              "new BucketDeployment (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:199:16)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:36:5)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/AssetParameters/e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3VersionKeyE415415F",
+            "trace": [
+              "new FileAssetParameters (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "Module_3_3.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:145:40)",
+              "AssetCode.bind (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
+              "new LayerVersion (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:189:29)",
+              "new AwsCliLayer (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.ts:12:5)",
+              "new BucketDeployment (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:199:16)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:36:5)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/AssetParameters/e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68ArtifactHashD9A515C3",
+            "trace": [
+              "new FileAssetParameters (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "Module_3_3.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:145:40)",
+              "AssetCode.bind (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
+              "new LayerVersion (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:189:29)",
+              "new AwsCliLayer (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.ts:12:5)",
+              "new BucketDeployment (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:199:16)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:36:5)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/AssetParameters/c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfS3Bucket55EFA30C",
+            "trace": [
+              "new FileAssetParameters (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "Module_3_3.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:145:40)",
+              "AssetCode.bind (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
+              "new Function (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/function.ts:600:29)",
+              "SingletonFunction.ensureLambda (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:134:12)",
+              "new SingletonFunction (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:56:32)",
+              "new BucketDeployment (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:196:21)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:36:5)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/AssetParameters/c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfS3VersionKey60329B70",
+            "trace": [
+              "new FileAssetParameters (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "Module_3_3.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:145:40)",
+              "AssetCode.bind (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
+              "new Function (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/function.ts:600:29)",
+              "SingletonFunction.ensureLambda (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:134:12)",
+              "new SingletonFunction (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:56:32)",
+              "new BucketDeployment (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:196:21)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:36:5)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/AssetParameters/c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfArtifactHash85F58E48",
+            "trace": [
+              "new FileAssetParameters (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "Module_3_3.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:145:40)",
+              "AssetCode.bind (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
+              "new Function (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/function.ts:600:29)",
+              "SingletonFunction.ensureLambda (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:134:12)",
+              "new SingletonFunction (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:56:32)",
+              "new BucketDeployment (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:196:21)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:36:5)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/AssetParameters/fcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersfcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791S3Bucket10ACC780",
+            "trace": [
+              "new FileAssetParameters (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "Module_3_3.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:145:40)",
+              "Object.bind (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:89:23)",
+              "/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:213:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:213:51)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:36:5)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/AssetParameters/fcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersfcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791S3VersionKey2D69F27F",
+            "trace": [
+              "new FileAssetParameters (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "Module_3_3.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:145:40)",
+              "Object.bind (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:89:23)",
+              "/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:213:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:213:51)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:36:5)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/AssetParameters/fcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersfcd5366f307f7b81d4e9225f018ede7a034319e502b5d8277f644820e2148791ArtifactHash0E915A40",
+            "trace": [
+              "new FileAssetParameters (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "Module_3_3.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:145:40)",
+              "Object.bind (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:89:23)",
+              "/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:213:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:213:51)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:36:5)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/AssetParameters/492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37S3Bucket78CB7A00",
+            "trace": [
+              "new FileAssetParameters (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "Module_3_3.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:145:40)",
+              "AssetCode.bind (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
+              "new Function (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/function.ts:600:29)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:41:37)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/AssetParameters/492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37S3VersionKeyC63962F4",
+            "trace": [
+              "new FileAssetParameters (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "Module_3_3.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:145:40)",
+              "AssetCode.bind (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
+              "new Function (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/function.ts:600:29)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:41:37)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/AssetParameters/492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters492369bddd042bf619267e20b6a4c0fa9afe4f5e61d9e90d312ee65ec685ec37ArtifactHashC9278BA1",
+            "trace": [
+              "new FileAssetParameters (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "Module_3_3.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:145:40)",
+              "AssetCode.bind (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
+              "new Function (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/function.ts:600:29)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:41:37)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/AssetParameters/8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473df/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473dfS3Bucket53BEC018",
+            "trace": [
+              "new FileAssetParameters (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "Module_3_3.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:145:40)",
+              "AssetCode.bind (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
+              "new Function (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/function.ts:600:29)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:47:38)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/AssetParameters/8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473df/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473dfS3VersionKey0B87FB85",
+            "trace": [
+              "new FileAssetParameters (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "Module_3_3.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:145:40)",
+              "AssetCode.bind (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
+              "new Function (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/function.ts:600:29)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:47:38)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/AssetParameters/8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473df/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters8827a95d82552ca29f6a227d2407dce2ff26533a6a1e6a0bdfc6bccd7f9473dfArtifactHash50883CCE",
+            "trace": [
+              "new FileAssetParameters (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "Module_3_3.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:145:40)",
+              "AssetCode.bind (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
+              "new Function (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/function.ts:600:29)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:47:38)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265",
+            "trace": [
+              "new Role (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-iam/lib/role.ts:326:18)",
+              "new Function (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/function.ts:580:31)",
+              "SingletonFunction.ensureLambda (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:134:12)",
+              "new SingletonFunction (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:56:32)",
+              "new BucketDeployment (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:196:21)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:36:5)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF",
+            "trace": [
+              "new Policy (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-iam/lib/role.ts:367:28)",
+              "Function.addToPrincipal (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-iam/lib/grant.ts:164:61)",
+              "Function.addToPrincipalOrResource (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-iam/lib/grant.ts:115:26)",
+              "Import.grant (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:723:27)",
+              "Import.grantRead (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:601:17)",
+              "Asset.grantRead (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:204:17)",
+              "Object.bind (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:96:15)",
+              "/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:213:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:213:51)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:36:5)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536",
+            "trace": [
+              "new Function (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/function.ts:642:35)",
+              "SingletonFunction.ensureLambda (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:134:12)",
+              "new SingletonFunction (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:56:32)",
+              "new BucketDeployment (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:196:21)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:36:5)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/LambdaEdgeViewerRequest/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaEdgeViewerRequestServiceRole2535341A",
+            "trace": [
+              "new Role (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-iam/lib/role.ts:326:18)",
+              "new Function (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/function.ts:580:31)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:41:37)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/LambdaEdgeViewerRequest/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaEdgeViewerRequestServiceRoleDefaultPolicy5F5D266A",
+            "trace": [
+              "new Policy (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-iam/lib/role.ts:367:28)",
+              "Function.addToPrincipal (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-iam/lib/grant.ts:164:61)",
+              "Table.combinedGrant (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:923:29)",
+              "Table.grantReadData (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:637:17)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:60:11)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/LambdaEdgeViewerRequest/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaEdgeViewerRequestB3CC60EE",
+            "trace": [
+              "new Function (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/function.ts:642:35)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:41:37)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/LambdaEdgeViewerRequest/CurrentVersion/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaEdgeViewerRequestCurrentVersionCE19CEC5f2caa18499446cedefd50a924d8f1ea4",
+            "trace": [
+              "new Version (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/lambda-version.ts:187:21)",
+              "Function.get currentVersion [as currentVersion] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/function.ts:364:28)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:76:56)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/LambdaEdgeViewerResponse/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaEdgeViewerResponseServiceRoleEE7AB7EC",
+            "trace": [
+              "new Role (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-iam/lib/role.ts:326:18)",
+              "new Function (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/function.ts:580:31)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:47:38)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/LambdaEdgeViewerResponse/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaEdgeViewerResponseC8EE4243",
+            "trace": [
+              "new Function (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/function.ts:642:35)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:47:38)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/LambdaEdgeViewerResponse/CurrentVersion/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaEdgeViewerResponseCurrentVersion6F2F1900455b5f002292463bb8adc33cec4a8062",
+            "trace": [
+              "new Version (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/lambda-version.ts:187:21)",
+              "Function.get currentVersion [as currentVersion] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-lambda/lib/function.ts:364:28)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:80:57)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/RedirectTable": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "RedirectTable0B40696D"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/construct-compat.ts:451:92)",
+              "new Table (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:1137:38)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:53:19)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/RedirectTable/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RedirectTable0B40696D",
+            "trace": [
+              "new Table (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:1109:18)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:53:19)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/AB testing distribution/Origin1/S3Origin/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ABtestingdistributionOrigin1S3Origin263A95EF",
+            "trace": [
+              "new OriginAccessIdentity (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-cloudfront/lib/origin-access-identity.ts:112:21)",
+              "S3BucketOrigin.bind (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-cloudfront-origins/lib/s3-origin.ts:80:35)",
+              "S3Origin.bind (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-cloudfront-origins/lib/s3-origin.ts:50:24)",
+              "Distribution.addOrigin (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:340:39)",
+              "new Distribution (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:272:27)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:65:28)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/AB testing distribution/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ABtestingdistribution05761D28",
+            "trace": [
+              "new Distribution (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:289:26)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:65:28)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/MonitoringDashboard/MonitoringDashboard/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MonitoringDashboard07D6683D",
+            "trace": [
+              "new Dashboard (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/aws-cloudwatch/lib/dashboard.ts:95:5)",
+              "ABDashboard.createLEDashboard (/Users/darwin/Desktop/ab-testing-at-edge/lib/ab_dashboard.ts:354:16)",
+              "ABDashboard.createModule33Dashboard (/Users/darwin/Desktop/ab-testing-at-edge/lib/ab_dashboard.ts:409:21)",
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:92:15)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/CloudFrontURL": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CloudFrontURL",
+            "trace": [
+              "new Module_3_3 (/Users/darwin/Desktop/ab-testing-at-edge/lib/module_3_3/ab_testing_module_3_3.ts:94:5)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/bin/ab-testing-at-edge.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/private/synthesis.ts:202:5)",
+              "visit (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/private/synthesis.ts:198:5)",
+              "injectMetadataResources (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (node:events:510:26)",
+              "process.emit (node:events:390:28)",
+              "process.emit (node:domain:475:12)",
+              "process.emit (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/ABWorkshopModule33/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:31:27)",
+              "/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/private/synthesis.ts:202:5)",
+              "visit (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/private/synthesis.ts:198:5)",
+              "injectMetadataResources (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (node:events:510:26)",
+              "process.emit (node:events:390:28)",
+              "process.emit (node:domain:475:12)",
+              "process.emit (/Users/darwin/Desktop/ab-testing-at-edge/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "ABWorkshopModule33"
+    }
+  }
+}
