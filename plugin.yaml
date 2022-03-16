@@ -1,0 +1,17 @@
+name: web-deploy-ab
+description: Infra code to realize deploy A/B
+types:
+  - env
+inputs:
+  - label: What is the name of the application?
+    type: text
+    name: appName
+    default: ABApplication
+  - label: Enter the path of the folder that will be deployed
+    type: text
+    name: appBuildPath
+    default: ./public
+  - label: Enter the text that will be displayed in the title of your application
+    type: text
+    name: appSiteTitle
+    default: Test A/B Application
