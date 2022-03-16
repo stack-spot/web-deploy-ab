@@ -32,14 +32,6 @@ The new layout (B version) has the images on three columns, a buy button and loo
 
 To test the new layout, we want to show it only to a small percentage of visitors. Based on the success of failure of the new layout we would like to be able to increase/decrease this percentage of visitor getting the new layout.
 
-This plugin demonstrate the usage of the following AWS services:
-
-- [Amazon CloudFront](https://aws.amazon.com/cloudfront): the fast and secure content delivery will be performed by a CloudFront distribution
-- [AWS Lambda@Edge](https://aws.amazon.com/lambda/edge): cookie setting and url rewriting
-- [AWS CloudFront Functions](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-functions.html): cookie setting and url rewriting
-- [Amazon DynamoDB](https://aws.amazon.com/dynamodb): the dynamic data will be stored in a DynamoDB table
-- [Amazon S3](https://aws.amazon.com/s3): the website’s static files and segmentation configuration file will be stored in two S3 buckets
-
 ### Prerequisites
 
 - AWS keys setted in the runtime
