@@ -2,6 +2,7 @@ name: web-deploy-ab
 description: Infra code to realize deploy A/B
 types:
   - env
+  - app
 inputs:
   - label: What is the name of the application?
     type: text
