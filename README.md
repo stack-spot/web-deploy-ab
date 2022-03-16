@@ -2,7 +2,7 @@
 
 ## Goal
 
-Implement an A/B testing solution for a website on AWS.
+Implement A/B testing solution for a website on AWS.
 
 We explore the use of edge computing, which is between the browser and the backend, to provide processing close to where data is generated. This plugin lets you run code closer to users of your application, which improves performance and reduces latency, through the use of three services:
 
