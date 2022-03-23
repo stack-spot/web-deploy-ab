@@ -1,4 +1,4 @@
-# Stack Foundation Deploy AB Plugin
+# Stack Foundation Deploy A/B Plugin
 
 ## Goal
 

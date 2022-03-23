@@ -1,0 +1,9 @@
+{
+    "horusecCliFilesOrPathsToIgnore": [
+        "**/package-lock.json",
+        "**/templates/iac-deploy-ab/resources/module_3_3/request/index.js"
+    ],
+    "horusecCliSeveritiesToIgnore": [
+        "INFO"
+    ]
+}
