@@ -11,7 +11,7 @@
     "cdk": "cdk"
   },
   "devDependencies": {
-    "@aws-cdk/assert": "1.76.0",
+    "@aws-cdk/assert": "1.199.0",
     "@types/jest": "^26.0.10",
     "@types/node": "10.17.27",
     "aws-cdk": "1.107.0",
@@ -21,11 +21,11 @@
     "typescript": "~3.9.7"
   },
   "dependencies": {
-    "@aws-cdk/aws-cloudfront-origins": "1.107.0",
-    "@aws-cdk/aws-dynamodb": "1.107.0",
-    "@aws-cdk/aws-s3-deployment": "1.107.0",
-    "@aws-cdk/aws-sns": "1.107.0",
-    "@aws-cdk/aws-sns-subscriptions": "1.107.0",
+    "@aws-cdk/aws-cloudfront-origins": "1.199.0",
+    "@aws-cdk/aws-dynamodb": "1.199.0",
+    "@aws-cdk/aws-s3-deployment": "1.199.0",
+    "@aws-cdk/aws-sns": "1.199.0",
+    "@aws-cdk/aws-sns-subscriptions": "1.199.0",
     "@aws-cdk/aws-sqs": "1.107.0",
     "@aws-cdk/core": "1.107.0",
     "ansi-regex": "^6.0.1",
